@@ -1,0 +1,9 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "1b077ccc279ab60f4fae96ea4e1fa41b"
+build_time: [1595028330, 997706000]
+inputs:
+  "/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/AppDelegate.swift": [1595027583, 534817523]
+  "/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/SceneDelegate.swift": [1595027583, 539127843]
+  "/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/ContentView.swift": [1595027583, 542592829]
+  "/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Models/Data.swift": [1595028330, 883450491]
+  "/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Models/Drill.swift": [1595028276, 288005464]
