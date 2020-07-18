@@ -18,6 +18,8 @@
 		96AA70A824C26A5300297869 /* Drill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA70A724C26A5300297869 /* Drill.swift */; };
 		96AA70AA24C2708B00297869 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA70A924C2708B00297869 /* ContentView.swift */; };
 		96CC3A6B24C2D72C009A4796 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CC3A6A24C2D72C009A4796 /* VideoPlayer.swift */; };
+		96CC3A6D24C2E07D009A4796 /* PlayerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CC3A6C24C2E07D009A4796 /* PlayerContainerView.swift */; };
+		96CC3A7024C2E241009A4796 /* PlayerControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CC3A6F24C2E241009A4796 /* PlayerControlsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		96AA70A724C26A5300297869 /* Drill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drill.swift; sourceTree = "<group>"; };
 		96AA70A924C2708B00297869 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		96CC3A6A24C2D72C009A4796 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		96CC3A6C24C2E07D009A4796 /* PlayerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerContainerView.swift; sourceTree = "<group>"; };
+		96CC3A6F24C2E241009A4796 /* PlayerControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				96AA708F24C267FF00297869 /* SceneDelegate.swift */,
 				96AA709124C267FF00297869 /* DrillDetail.swift */,
 				96AA70A924C2708B00297869 /* ContentView.swift */,
+				96CC3A6C24C2E07D009A4796 /* PlayerContainerView.swift */,
+				96CC3A6F24C2E241009A4796 /* PlayerControlsView.swift */,
 				96CC3A6A24C2D72C009A4796 /* VideoPlayer.swift */,
 				96AA709324C2680300297869 /* Assets.xcassets */,
 				96AA709824C2680300297869 /* LaunchScreen.storyboard */,
@@ -183,8 +189,10 @@
 				96AA709024C267FF00297869 /* SceneDelegate.swift in Sources */,
 				96AA70AA24C2708B00297869 /* ContentView.swift in Sources */,
 				96AA709224C267FF00297869 /* DrillDetail.swift in Sources */,
+				96CC3A7024C2E241009A4796 /* PlayerControlsView.swift in Sources */,
 				96AA70A624C269BB00297869 /* Data.swift in Sources */,
 				96AA70A824C26A5300297869 /* Drill.swift in Sources */,
+				96CC3A6D24C2E07D009A4796 /* PlayerContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

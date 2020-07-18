@@ -1,201 +1,206 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "VideoPlayer"
+- "mp4Data"
+- "ContentView"
+- "ContentView_Previews"
 provides-nominal:
-- "9DrillsApp11VideoPlayerV"
+- "9DrillsApp11ContentViewV"
+- "9DrillsApp20ContentView_PreviewsV"
 provides-member:
-- ["9DrillsApp11VideoPlayerV", ""]
+- ["9DrillsApp11ContentViewV", ""]
+- ["9DrillsApp20ContentView_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "AVPlayer"
-- "AVPlayerViewController"
-- "AssignmentPrecedence"
-- !private "BooleanLiteralType"
-- "UIViewControllerRepresentable"
-- "UIViewControllerRepresentableContext"
-- "VideoPlayer"
+- !private "/"
+- !private "AVPlayer"
+- "ContentView"
+- "ContentView_Previews"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- !private "PlayerContainerView"
+- "PreviewProvider"
+- "StringLiteralType"
+- !private "UIScreen"
+- !private "URL"
+- !private "VStack"
+- "View"
+- "mp4Data"
 depends-member:
-- !private ["So19AVLayerVideoGravitya", "resize"]
-- !private ["So22AVPlayerViewControllerC", "init"]
-- !private ["So22AVPlayerViewControllerC", "player"]
-- !private ["So22AVPlayerViewControllerC", "showsPlaybackControls"]
-- !private ["So22AVPlayerViewControllerC", "videoGravity"]
+- !private ["So8AVPlayerC", "init"]
+- !private ["7SwiftUI10AnimatableP", "height"]
+- !private ["Sa", "subscript"]
+- !private ["SK", "subscript"]
+- !private ["So6CGRectV", "height"]
+- !private ["s7CVarArgP", "bounds"]
 - !private ["s7CVarArgP", "init"]
-- !private ["s7CVarArgP", "player"]
-- !private ["s7CVarArgP", "showsPlaybackControls"]
-- !private ["s7CVarArgP", "videoGravity"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["Sl", "subscript"]
+- !private ["9DrillsApp11ContentViewV", "AVPlayer"]
+- ["9DrillsApp11ContentViewV", "Body"]
+- !private ["9DrillsApp11ContentViewV", "PlayerContainerView"]
+- !private ["9DrillsApp11ContentViewV", "UIScreen"]
+- !private ["9DrillsApp11ContentViewV", "URL"]
+- !private ["9DrillsApp11ContentViewV", "VStack"]
+- ["9DrillsApp11ContentViewV", "View"]
+- ["9DrillsApp11ContentViewV", "_Default_Body"]
+- ["9DrillsApp11ContentViewV", "_makeView"]
+- ["9DrillsApp11ContentViewV", "_makeViewList"]
+- ["9DrillsApp11ContentViewV", "body"]
+- ["9DrillsApp11ContentViewV", "deinit"]
+- ["9DrillsApp11ContentViewV", "init"]
+- !private ["9DrillsApp11ContentViewV", "mp4Data"]
+- !private ["9DrillsApp20ContentView_PreviewsV", "ContentView"]
+- ["9DrillsApp20ContentView_PreviewsV", "Previews"]
+- ["9DrillsApp20ContentView_PreviewsV", "View"]
+- ["9DrillsApp20ContentView_PreviewsV", "_Default_Previews"]
+- ["9DrillsApp20ContentView_PreviewsV", "_platform"]
+- ["9DrillsApp20ContentView_PreviewsV", "_previews"]
+- ["9DrillsApp20ContentView_PreviewsV", "deinit"]
+- ["9DrillsApp20ContentView_PreviewsV", "init"]
+- ["9DrillsApp20ContentView_PreviewsV", "platform"]
+- ["9DrillsApp20ContentView_PreviewsV", "previews"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "player"]
-- !private ["s28CustomDebugStringConvertibleP", "showsPlaybackControls"]
-- !private ["s28CustomDebugStringConvertibleP", "videoGravity"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "height"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "bounds"]
 - !private ["s23CustomStringConvertibleP", "init"]
-- !private ["s23CustomStringConvertibleP", "player"]
-- !private ["s23CustomStringConvertibleP", "showsPlaybackControls"]
-- !private ["s23CustomStringConvertibleP", "videoGravity"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["Se", "height"]
+- !private ["Se", "init"]
+- !private ["Se", "subscript"]
+- !private ["SE", "height"]
+- !private ["SE", "init"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "bounds"]
+- !private ["SQ", "height"]
 - !private ["SQ", "init"]
-- !private ["SQ", "player"]
-- !private ["SQ", "resize"]
-- !private ["SQ", "showsPlaybackControls"]
-- !private ["SQ", "videoGravity"]
+- !private ["SQ", "main"]
+- !private ["SQ", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["SH", "bounds"]
 - !private ["SH", "init"]
-- !private ["SH", "player"]
-- !private ["SH", "resize"]
-- !private ["SH", "showsPlaybackControls"]
-- !private ["SH", "videoGravity"]
-- !private ["So8NSCodingP", "init"]
-- !private ["So8NSCodingP", "player"]
-- !private ["So8NSCodingP", "showsPlaybackControls"]
-- !private ["So8NSCodingP", "videoGravity"]
-- !private ["So26NSExtensionRequestHandlingP", "init"]
-- !private ["So26NSExtensionRequestHandlingP", "player"]
-- !private ["So26NSExtensionRequestHandlingP", "showsPlaybackControls"]
-- !private ["So26NSExtensionRequestHandlingP", "videoGravity"]
+- !private ["SH", "main"]
+- !private ["SH", "subscript"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- !private ["So8NSObjectC", "bounds"]
 - !private ["So8NSObjectC", "init"]
-- !private ["So8NSObjectC", "player"]
-- !private ["So8NSObjectC", "showsPlaybackControls"]
-- !private ["So8NSObjectC", "videoGravity"]
+- !private ["So8NSObjectC", "main"]
+- !private ["So8NSObjectP", "bounds"]
 - !private ["So8NSObjectP", "init"]
-- !private ["So8NSObjectP", "player"]
-- !private ["So8NSObjectP", "showsPlaybackControls"]
-- !private ["So8NSObjectP", "videoGravity"]
-- !private ["SY", "resize"]
-- !private ["So21UIAppearanceContainerP", "init"]
-- !private ["So21UIAppearanceContainerP", "player"]
-- !private ["So21UIAppearanceContainerP", "showsPlaybackControls"]
-- !private ["So21UIAppearanceContainerP", "videoGravity"]
-- !private ["So18UIContentContainerP", "init"]
-- !private ["So18UIContentContainerP", "player"]
-- !private ["So18UIContentContainerP", "showsPlaybackControls"]
-- !private ["So18UIContentContainerP", "videoGravity"]
-- !private ["So18UIFocusEnvironmentP", "init"]
-- !private ["So18UIFocusEnvironmentP", "player"]
-- !private ["So18UIFocusEnvironmentP", "showsPlaybackControls"]
-- !private ["So18UIFocusEnvironmentP", "videoGravity"]
-- !private ["So30UIPasteConfigurationSupportingP", "init"]
-- !private ["So30UIPasteConfigurationSupportingP", "player"]
-- !private ["So30UIPasteConfigurationSupportingP", "showsPlaybackControls"]
-- !private ["So30UIPasteConfigurationSupportingP", "videoGravity"]
-- !private ["So11UIResponderC", "init"]
-- !private ["So11UIResponderC", "player"]
-- !private ["So11UIResponderC", "showsPlaybackControls"]
-- !private ["So11UIResponderC", "videoGravity"]
-- !private ["So30UIResponderStandardEditActionsP", "init"]
-- !private ["So30UIResponderStandardEditActionsP", "player"]
-- !private ["So30UIResponderStandardEditActionsP", "showsPlaybackControls"]
-- !private ["So30UIResponderStandardEditActionsP", "videoGravity"]
-- !private ["So16UIStateRestoringP", "init"]
-- !private ["So16UIStateRestoringP", "player"]
-- !private ["So16UIStateRestoringP", "showsPlaybackControls"]
-- !private ["So16UIStateRestoringP", "videoGravity"]
-- !private ["So18UITraitEnvironmentP", "init"]
-- !private ["So18UITraitEnvironmentP", "player"]
-- !private ["So18UITraitEnvironmentP", "showsPlaybackControls"]
-- !private ["So18UITraitEnvironmentP", "videoGravity"]
-- !private ["So23UIUserActivityRestoringP", "init"]
-- !private ["So23UIUserActivityRestoringP", "player"]
-- !private ["So23UIUserActivityRestoringP", "showsPlaybackControls"]
-- !private ["So23UIUserActivityRestoringP", "videoGravity"]
-- !private ["So16UIViewControllerC", "init"]
-- !private ["So16UIViewControllerC", "player"]
-- !private ["So16UIViewControllerC", "showsPlaybackControls"]
-- !private ["So16UIViewControllerC", "videoGravity"]
-- !private ["7SwiftUI29UIViewControllerRepresentableP", "AVPlayerViewController"]
-- ["7SwiftUI29UIViewControllerRepresentableP", "Body"]
-- ["7SwiftUI29UIViewControllerRepresentableP", "Coordinator"]
-- ["7SwiftUI29UIViewControllerRepresentableP", "UIViewControllerType"]
-- ["7SwiftUI29UIViewControllerRepresentableP", ""]
-- ["7SwiftUI29UIViewControllerRepresentableP", "_Default_Body"]
-- ["7SwiftUI29UIViewControllerRepresentableP", "_Default_Coordinator"]
-- ["7SwiftUI29UIViewControllerRepresentableP", "_Default_UIViewControllerType"]
-- ["7SwiftUI29UIViewControllerRepresentableP", "_identifiedViewTree"]
-- ["7SwiftUI29UIViewControllerRepresentableP", "_makeView"]
-- ["7SwiftUI29UIViewControllerRepresentableP", "_makeViewList"]
-- ["7SwiftUI29UIViewControllerRepresentableP", "body"]
-- ["7SwiftUI29UIViewControllerRepresentableP", "dismantleUIViewController"]
-- ["7SwiftUI29UIViewControllerRepresentableP", "makeCoordinator"]
-- ["7SwiftUI29UIViewControllerRepresentableP", "makeUIViewController"]
-- !private ["7SwiftUI29UIViewControllerRepresentableP", "player"]
-- ["7SwiftUI29UIViewControllerRepresentableP", "updateUIViewController"]
-- ["9DrillsApp11VideoPlayerV", "AVPlayer"]
-- ["9DrillsApp11VideoPlayerV", "AVPlayerViewController"]
-- ["9DrillsApp11VideoPlayerV", "Body"]
-- ["9DrillsApp11VideoPlayerV", "Coordinator"]
-- ["9DrillsApp11VideoPlayerV", "UIViewControllerRepresentableContext"]
-- ["9DrillsApp11VideoPlayerV", "UIViewControllerType"]
-- ["9DrillsApp11VideoPlayerV", "VideoPlayer"]
-- ["9DrillsApp11VideoPlayerV", "_Default_Body"]
-- ["9DrillsApp11VideoPlayerV", "_Default_Coordinator"]
-- ["9DrillsApp11VideoPlayerV", "_Default_UIViewControllerType"]
-- ["9DrillsApp11VideoPlayerV", "_identifiedViewTree"]
-- ["9DrillsApp11VideoPlayerV", "_makeView"]
-- ["9DrillsApp11VideoPlayerV", "_makeViewList"]
-- ["9DrillsApp11VideoPlayerV", "body"]
-- ["9DrillsApp11VideoPlayerV", "deinit"]
-- ["9DrillsApp11VideoPlayerV", "dismantleUIViewController"]
-- ["9DrillsApp11VideoPlayerV", "init"]
-- ["9DrillsApp11VideoPlayerV", "makeCoordinator"]
-- ["9DrillsApp11VideoPlayerV", "makeUIViewController"]
-- ["9DrillsApp11VideoPlayerV", "player"]
-- ["9DrillsApp11VideoPlayerV", "updateUIViewController"]
-- !private ["7SwiftUI4ViewP", "AVPlayerViewController"]
+- !private ["So8NSObjectP", "main"]
+- !private ["9DrillsApp19PlayerContainerViewV", "deinit"]
+- !private ["9DrillsApp19PlayerContainerViewV", "init"]
+- !private ["7SwiftUI15PreviewProviderP", "ContentView"]
+- ["7SwiftUI15PreviewProviderP", "Previews"]
+- ["7SwiftUI15PreviewProviderP", ""]
+- ["7SwiftUI15PreviewProviderP", "_Default_Previews"]
+- ["7SwiftUI15PreviewProviderP", "_platform"]
+- ["7SwiftUI15PreviewProviderP", "_previews"]
+- ["7SwiftUI15PreviewProviderP", "platform"]
+- ["7SwiftUI15PreviewProviderP", "previews"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "subscript"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["ST", "subscript"]
+- !private ["So8UIScreenC", "bounds"]
+- !private ["So8UIScreenC", "main"]
+- !private ["So18UITraitEnvironmentP", "bounds"]
+- !private ["So18UITraitEnvironmentP", "main"]
+- !private ["10Foundation3URLV", "init"]
+- !private ["7SwiftUI6VStackV", "frame"]
+- !private ["7SwiftUI6VStackV", "init"]
+- !private ["7SwiftUI4ViewP", "AVPlayer"]
 - ["7SwiftUI4ViewP", "Body"]
-- ["7SwiftUI4ViewP", "Coordinator"]
-- ["7SwiftUI4ViewP", "UIViewControllerType"]
+- !private ["7SwiftUI4ViewP", "PlayerContainerView"]
+- !private ["7SwiftUI4ViewP", "UIScreen"]
+- !private ["7SwiftUI4ViewP", "URL"]
+- !private ["7SwiftUI4ViewP", "VStack"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
-- ["7SwiftUI4ViewP", "_Default_Coordinator"]
-- ["7SwiftUI4ViewP", "_Default_UIViewControllerType"]
-- ["7SwiftUI4ViewP", "_identifiedViewTree"]
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "body"]
-- ["7SwiftUI4ViewP", "dismantleUIViewController"]
-- ["7SwiftUI4ViewP", "makeCoordinator"]
-- ["7SwiftUI4ViewP", "makeUIViewController"]
-- !private ["7SwiftUI4ViewP", "player"]
-- ["7SwiftUI4ViewP", "updateUIViewController"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "resize"]
+- !private ["7SwiftUI4ViewP", "frame"]
+- !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "mp4Data"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "height"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "player"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "showsPlaybackControls"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "videoGravity"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "bounds"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "player"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "showsPlaybackControls"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "videoGravity"]
-- !private ["s21_ObjectiveCBridgeableP", "resize"]
-- !private ["s20_SwiftNewtypeWrapperP", "resize"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
+- !private ["s21_ObjectiveCBridgeableP", "height"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["7SwiftUI16_PreviewProviderP", "ContentView"]
+- ["7SwiftUI16_PreviewProviderP", "Previews"]
+- ["7SwiftUI16_PreviewProviderP", ""]
+- ["7SwiftUI16_PreviewProviderP", "_Default_Previews"]
+- ["7SwiftUI16_PreviewProviderP", "_platform"]
+- ["7SwiftUI16_PreviewProviderP", "_previews"]
+- ["7SwiftUI16_PreviewProviderP", "platform"]
+- ["7SwiftUI16_PreviewProviderP", "previews"]
 depends-nominal:
-- !private "So19AVLayerVideoGravitya"
-- !private "So22AVPlayerViewControllerC"
+- !private "So8AVPlayerC"
+- !private "7SwiftUI10AnimatableP"
+- !private "Sa"
+- !private "SK"
+- !private "So6CGRectV"
 - !private "s7CVarArgP"
+- !private "Sl"
+- "9DrillsApp11ContentViewV"
+- "9DrillsApp20ContentView_PreviewsV"
+- !private "10Foundation15ContiguousBytesP"
 - !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SE"
 - !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
 - !private "SH"
-- !private "So8NSCodingP"
-- !private "So26NSExtensionRequestHandlingP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
 - !private "So8NSObjectC"
 - !private "So8NSObjectP"
-- !private "SY"
-- !private "So21UIAppearanceContainerP"
-- !private "So18UIContentContainerP"
-- !private "So18UIFocusEnvironmentP"
-- !private "So30UIPasteConfigurationSupportingP"
-- !private "So11UIResponderC"
-- !private "So30UIResponderStandardEditActionsP"
-- !private "So16UIStateRestoringP"
+- !private "9DrillsApp19PlayerContainerViewV"
+- "7SwiftUI15PreviewProviderP"
+- !private "Sk"
+- !private "Sm"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "ST"
+- !private "So8UIScreenC"
 - !private "So18UITraitEnvironmentP"
-- !private "So23UIUserActivityRestoringP"
-- !private "So16UIViewControllerC"
-- "7SwiftUI29UIViewControllerRepresentableP"
-- "9DrillsApp11VideoPlayerV"
+- !private "10Foundation3URLV"
+- !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s20_SwiftNewtypeWrapperP"
+- "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
@@ -240,4 +245,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5ac99c94f6dc36645e8488c1a24bf768"
+interface-hash: "340c89f044871ccf554f9e86315aa419"
