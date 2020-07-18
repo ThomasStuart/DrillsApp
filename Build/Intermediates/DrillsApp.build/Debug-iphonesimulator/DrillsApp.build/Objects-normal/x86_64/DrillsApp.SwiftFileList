@@ -3,7 +3,10 @@
 /Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/SceneDelegate.swift
 /Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/ContentView.swift
 /Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/DrillDetail.swift
+/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Models/Color.swift
+/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Models/Constants.swift
 /Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/PlayerControlsView.swift
 /Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Models/Data.swift
 /Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Models/Drill.swift
 /Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/PlayerContainerView.swift
+/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Views/CollectionViewCell.swift
