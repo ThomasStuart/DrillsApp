@@ -9,11 +9,39 @@
 import SwiftUI
 
 
-struct Drill: Hashable, Codable, Identifiable {
+struct Drill: Decodable {
     var id: Int
     var title: String
-    var targets: [String]
-    var benifits: [String]
-    var steps: [String]
-    fileprivate var videoURL: String
+    var targets: [target]
+    var benefits: [benefit]
+    var steps: [step]
+    var videoURL: String?
+}
+
+
+struct target: Decodable {
+    let id = UUID()
+    let name: String? 
+
+    enum CodingKeys: String, CodingKey {
+        case name = "name"
+    }
+}
+
+
+struct benefit: Decodable {
+    let name: String?
+
+    enum CodingKeys: String, CodingKey {
+        case name = "name"
+    }
+}
+
+
+struct step: Decodable {
+    let name: String?
+
+    enum CodingKeys: String, CodingKey {
+        case name = "name"
+    }
 }
