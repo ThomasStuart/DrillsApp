@@ -9,23 +9,46 @@
 import SwiftUI
 import AVKit
 
+
 struct DrillDetail: View {
     var drill: Drill
-    
+
     var body: some View {
         
-        //Start Targets VStack
          VStack {
-            Text("Targets:")
-                .font(.title)
+            
+            VStack{
+                HStack{
+                Text("Targets:")
+                    .font(.headline)
 
-            ForEach(drill.targets, id: \.id){ s in
-                Text( s.name ?? "")
-                    .font(.subheadline)
+                ForEach(drill.targets, id: \.id){ s in
+                    Text( s.name ?? "")
+                        .font(.caption)
+                }
+                }
             }
-        }//end Vstack Targets
         
+             VStack{
+                 VideoPlayer(player: AVPlayer(url: URL(string: mp4Data[0])!))
+                 
+             }
+            .frame(height: UIScreen.main.bounds.height / 3.5)
+            
+            
+            VStack{
+                Text("Benefits:")
+                    .font(.title)
+
+                ForEach(drill.benefits, id: \.id){ s in
+                    Text( s.name ?? "")
+                        .font(.subheadline)
+                }
+            }
+            
+        }
     }
+    
 }
 
 struct DrillDetail_Previews: PreviewProvider {

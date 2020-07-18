@@ -8,24 +8,27 @@
 
 import SwiftUI
 import AVKit
-  
-struct ContentView:View {
-    var body: some View {
-          PlayerContainerView(player: AVPlayer(url: URL(string: "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8")!))
-    }
-}
 
+let mp4Data = ["https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4", "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"]
+
+struct ContentView: View {
+    
+        var body: some View {
+             VStack{
+                 VideoPlayer(player: AVPlayer(url: URL(string: mp4Data[0])!))
+                 
+             }
+            .frame(height: UIScreen.main.bounds.height / 3.5)
+            
+        }
+  }
+  
+  
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
 
-struct PlayerView: UIViewRepresentable {
-  let player: AVPlayer
-  func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<PlayerView>) {
-  }
-  func makeUIView(context: Context) -> UIView {
-    return PlayerUIView(player: player)
-  }
-}
+
+
