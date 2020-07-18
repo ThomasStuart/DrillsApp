@@ -27,6 +27,7 @@ depends-top-level:
 - "Decodable"
 - "Drill"
 - !private "FloatLiteralType"
+- "Identifiable"
 - "Int"
 - !private "IntegerLiteralType"
 - "String"
@@ -126,11 +127,13 @@ depends-member:
 - ["s23CustomStringConvertibleP", "intValue"]
 - ["s23CustomStringConvertibleP", "rawValue"]
 - ["s23CustomStringConvertibleP", "stringValue"]
+- ["Se", "ID"]
 - ["Se", "UUID"]
 - ["Se", ""]
+- ["Se", "_Default_ID"]
 - !private ["Se", "_findStringSwitchCase"]
 - !private ["Se", "benefits"]
-- !private ["Se", "id"]
+- ["Se", "id"]
 - ["Se", "init"]
 - !private ["Se", "name"]
 - !private ["Se", "steps"]
@@ -138,8 +141,10 @@ depends-member:
 - !private ["Se", "title"]
 - !private ["Se", "videoURL"]
 - !private ["s7DecoderP", "container"]
+- ["9DrillsApp5DrillV", "ID"]
 - ["9DrillsApp5DrillV", "Int"]
 - ["9DrillsApp5DrillV", "String"]
+- ["9DrillsApp5DrillV", "_Default_ID"]
 - ["9DrillsApp5DrillV", "benefit"]
 - ["9DrillsApp5DrillV", "benefits"]
 - ["9DrillsApp5DrillV", "deinit"]
@@ -181,6 +186,16 @@ depends-member:
 - ["SH", "rawValue"]
 - ["SH", "stringValue"]
 - !private ["s6HasherV", "combine"]
+- ["s12IdentifiableP", "ID"]
+- ["s12IdentifiableP", ""]
+- ["s12IdentifiableP", "_Default_ID"]
+- !private ["s12IdentifiableP", "benefits"]
+- ["s12IdentifiableP", "id"]
+- ["s12IdentifiableP", "init"]
+- !private ["s12IdentifiableP", "steps"]
+- !private ["s12IdentifiableP", "targets"]
+- !private ["s12IdentifiableP", "title"]
+- !private ["s12IdentifiableP", "videoURL"]
 - !private ["s22KeyedDecodingContainerV", "decode"]
 - !private ["s22KeyedDecodingContainerV", "decodeIfPresent"]
 - !private ["s30KeyedDecodingContainerProtocolP", "decode"]
@@ -286,6 +301,7 @@ depends-nominal:
 - "SQ"
 - "SH"
 - !private "s6HasherV"
+- "s12IdentifiableP"
 - !private "s22KeyedDecodingContainerV"
 - !private "s30KeyedDecodingContainerProtocolP"
 - "SY"
@@ -339,4 +355,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f417ba8b9dc458c681de816e15fc41d3"
+interface-hash: "7e09b41d5be74300be2bf056b51fa51c"

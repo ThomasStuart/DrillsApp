@@ -18,7 +18,6 @@ depends-top-level:
 - "DrillDetail_Previews"
 - !private "FloatLiteralType"
 - !private "ForEach"
-- !private "HStack"
 - !private "IntegerLiteralType"
 - !private "PlayerContainerView"
 - "PreviewProvider"
@@ -43,16 +42,12 @@ depends-member:
 - !private ["Sl", "subscript"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "bounds"]
-- !private ["s28CustomDebugStringConvertibleP", "caption"]
-- !private ["s28CustomDebugStringConvertibleP", "headline"]
 - !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "subheadline"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "title"]
-- !private ["s17CustomReflectableP", "caption"]
-- !private ["s17CustomReflectableP", "headline"]
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "subheadline"]
 - !private ["s17CustomReflectableP", "subscript"]
@@ -63,8 +58,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
 - !private ["Se", "benefits"]
-- !private ["Se", "caption"]
-- !private ["Se", "headline"]
 - !private ["Se", "height"]
 - !private ["Se", "id"]
 - !private ["Se", "init"]
@@ -72,19 +65,16 @@ depends-member:
 - !private ["Se", "steps"]
 - !private ["Se", "subheadline"]
 - !private ["Se", "subscript"]
-- !private ["Se", "targets"]
 - !private ["Se", "title"]
 - !private ["Se", "videoURL"]
 - !private ["9DrillsApp5DrillV", "benefits"]
 - !private ["9DrillsApp5DrillV", "steps"]
-- !private ["9DrillsApp5DrillV", "targets"]
 - !private ["9DrillsApp5DrillV", "title"]
 - !private ["9DrillsApp5DrillV", "videoURL"]
 - !private ["9DrillsApp11DrillDetailV", "AVPlayer"]
 - ["9DrillsApp11DrillDetailV", "Body"]
 - ["9DrillsApp11DrillDetailV", "Drill"]
 - !private ["9DrillsApp11DrillDetailV", "ForEach"]
-- !private ["9DrillsApp11DrillDetailV", "HStack"]
 - !private ["9DrillsApp11DrillDetailV", "PlayerContainerView"]
 - !private ["9DrillsApp11DrillDetailV", "Text"]
 - !private ["9DrillsApp11DrillDetailV", "UIScreen"]
@@ -111,17 +101,13 @@ depends-member:
 - ["9DrillsApp20DrillDetail_PreviewsV", "platform"]
 - ["9DrillsApp20DrillDetail_PreviewsV", "previews"]
 - !private ["7SwiftUI18DynamicViewContentP", "init"]
-- !private ["SE", "caption"]
-- !private ["SE", "headline"]
 - !private ["SE", "height"]
 - !private ["SE", "init"]
 - !private ["SE", "subheadline"]
 - !private ["SE", "subscript"]
 - !private ["SE", "title"]
 - !private ["SQ", "bounds"]
-- !private ["SQ", "caption"]
 - !private ["SQ", "font"]
-- !private ["SQ", "headline"]
 - !private ["SQ", "height"]
 - !private ["SQ", "init"]
 - !private ["SQ", "lineLimit"]
@@ -130,28 +116,23 @@ depends-member:
 - !private ["SQ", "subscript"]
 - !private ["SQ", "title"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
-- !private ["s23ExpressibleByNilLiteralP", "caption"]
-- !private ["s23ExpressibleByNilLiteralP", "headline"]
 - !private ["s23ExpressibleByNilLiteralP", "subheadline"]
 - !private ["s23ExpressibleByNilLiteralP", "title"]
-- !private ["7SwiftUI4FontV", "caption"]
-- !private ["7SwiftUI4FontV", "headline"]
 - !private ["7SwiftUI4FontV", "subheadline"]
 - !private ["7SwiftUI4FontV", "title"]
 - !private ["7SwiftUI7ForEachV", "init"]
-- !private ["7SwiftUI7GestureP", "caption"]
-- !private ["7SwiftUI7GestureP", "headline"]
 - !private ["7SwiftUI7GestureP", "subheadline"]
 - !private ["7SwiftUI7GestureP", "title"]
-- !private ["7SwiftUI6HStackV", "init"]
 - !private ["SH", "bounds"]
-- !private ["SH", "caption"]
-- !private ["SH", "headline"]
 - !private ["SH", "init"]
 - !private ["SH", "main"]
 - !private ["SH", "subheadline"]
 - !private ["SH", "subscript"]
 - !private ["SH", "title"]
+- !private ["s12IdentifiableP", "benefits"]
+- !private ["s12IdentifiableP", "steps"]
+- !private ["s12IdentifiableP", "title"]
+- !private ["s12IdentifiableP", "videoURL"]
 - !private ["SM", "subscript"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - !private ["So8NSObjectC", "bounds"]
@@ -160,8 +141,6 @@ depends-member:
 - !private ["So8NSObjectP", "bounds"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "main"]
-- !private ["Sq", "caption"]
-- !private ["Sq", "headline"]
 - !private ["Sq", "subheadline"]
 - !private ["Sq", "title"]
 - !private ["9DrillsApp19PlayerContainerViewV", "deinit"]
@@ -192,7 +171,6 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "AVPlayer"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "ForEach"]
-- !private ["7SwiftUI4ViewP", "HStack"]
 - !private ["7SwiftUI4ViewP", "PlayerContainerView"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "UIScreen"]
@@ -203,11 +181,9 @@ depends-member:
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "body"]
-- !private ["7SwiftUI4ViewP", "caption"]
 - !private ["7SwiftUI4ViewP", "drill"]
 - !private ["7SwiftUI4ViewP", "font"]
 - !private ["7SwiftUI4ViewP", "frame"]
-- !private ["7SwiftUI4ViewP", "headline"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "lineLimit"]
 - !private ["7SwiftUI4ViewP", "mp4Data"]
@@ -227,8 +203,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "bounds"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
-- !private ["s21_ObjectiveCBridgeableP", "caption"]
-- !private ["s21_ObjectiveCBridgeableP", "headline"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "subheadline"]
@@ -247,8 +221,6 @@ depends-member:
 - !private ["9DrillsApp7benefitV", "name"]
 - !private ["9DrillsApp4stepV", "id"]
 - !private ["9DrillsApp4stepV", "name"]
-- !private ["9DrillsApp6targetV", "id"]
-- !private ["9DrillsApp6targetV", "name"]
 depends-nominal:
 - !private "So8AVPlayerC"
 - !private "7SwiftUI10AnimatableP"
@@ -274,8 +246,8 @@ depends-nominal:
 - !private "7SwiftUI4FontV"
 - !private "7SwiftUI7ForEachV"
 - !private "7SwiftUI7GestureP"
-- !private "7SwiftUI6HStackV"
 - !private "SH"
+- !private "s12IdentifiableP"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
 - !private "So8NSObjectC"
@@ -306,7 +278,6 @@ depends-nominal:
 - "7SwiftUI16_PreviewProviderP"
 - !private "9DrillsApp7benefitV"
 - !private "9DrillsApp4stepV"
-- !private "9DrillsApp6targetV"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"

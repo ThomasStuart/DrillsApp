@@ -20,22 +20,11 @@ struct DrillDetail: View {
             Text(drill.title)
                 .font(.title)
             
-            VStack{
-                HStack{
-                Text("Targets:")
-                    .font(.headline)
-
-                ForEach(drill.targets, id: \.id){ s in
-                    Text( s.name ?? "")
-                        .font(.caption)
-                }
-                }
-            }
         
             Text(drill.videoURL ?? "no data")
             
              VStack{
-                 PlayerContainerView(player: AVPlayer(url: URL(string: mp4Data[0])!))
+                PlayerContainerView(player: AVPlayer(url: URL(string: mp4Data[0])!), videoTitle: "")
              }
             .frame(height: UIScreen.main.bounds.height / 3.5)
             
@@ -67,7 +56,7 @@ struct DrillDetail: View {
 
 struct DrillDetail_Previews: PreviewProvider {
     static var previews: some View {
-        DrillDetail(drill: drillData[0])
+        DrillDetail(drill: drillData[1])
     }
 }
 

@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		96451AF624C2E82B006632C2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96451AF524C2E82B006632C2 /* Constants.swift */; };
-		96451AFA24C2E8E4006632C2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96451AF924C2E8E4006632C2 /* CollectionViewCell.swift */; };
 		96451AFC24C2E993006632C2 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96451AFB24C2E993006632C2 /* Color.swift */; };
+		9677D69F24C3937800954F82 /* DrillRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677D69E24C3937800954F82 /* DrillRow.swift */; };
 		96AA708E24C267FF00297869 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA708D24C267FF00297869 /* AppDelegate.swift */; };
 		96AA709024C267FF00297869 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA708F24C267FF00297869 /* SceneDelegate.swift */; };
 		96AA709224C267FF00297869 /* DrillDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA709124C267FF00297869 /* DrillDetail.swift */; };
@@ -19,7 +19,7 @@
 		96AA70A324C2696F00297869 /* Drills.json in Resources */ = {isa = PBXBuildFile; fileRef = 96AA70A224C2696F00297869 /* Drills.json */; };
 		96AA70A624C269BB00297869 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA70A524C269BB00297869 /* Data.swift */; };
 		96AA70A824C26A5300297869 /* Drill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA70A724C26A5300297869 /* Drill.swift */; };
-		96AA70AA24C2708B00297869 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA70A924C2708B00297869 /* ContentView.swift */; };
+		96AA70AA24C2708B00297869 /* DrillList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA70A924C2708B00297869 /* DrillList.swift */; };
 		96CC3A6B24C2D72C009A4796 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CC3A6A24C2D72C009A4796 /* VideoPlayer.swift */; };
 		96CC3A6D24C2E07D009A4796 /* PlayerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CC3A6C24C2E07D009A4796 /* PlayerContainerView.swift */; };
 		96CC3A7024C2E241009A4796 /* PlayerControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CC3A6F24C2E241009A4796 /* PlayerControlsView.swift */; };
@@ -27,8 +27,8 @@
 
 /* Begin PBXFileReference section */
 		96451AF524C2E82B006632C2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		96451AF924C2E8E4006632C2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		96451AFB24C2E993006632C2 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		9677D69E24C3937800954F82 /* DrillRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillRow.swift; sourceTree = "<group>"; };
 		96AA708A24C267FF00297869 /* DrillsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrillsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96AA708D24C267FF00297869 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96AA708F24C267FF00297869 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		96AA70A224C2696F00297869 /* Drills.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Drills.json; path = ../../../../../Downloads/Drills.json; sourceTree = "<group>"; };
 		96AA70A524C269BB00297869 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		96AA70A724C26A5300297869 /* Drill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drill.swift; sourceTree = "<group>"; };
-		96AA70A924C2708B00297869 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		96AA70A924C2708B00297869 /* DrillList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillList.swift; sourceTree = "<group>"; };
 		96CC3A6A24C2D72C009A4796 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 		96CC3A6C24C2E07D009A4796 /* PlayerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerContainerView.swift; sourceTree = "<group>"; };
 		96CC3A6F24C2E241009A4796 /* PlayerControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlsView.swift; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		96451AF824C2E8C1006632C2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				96451AF924C2E8E4006632C2 /* CollectionViewCell.swift */,
+				9677D69E24C3937800954F82 /* DrillRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -90,7 +90,7 @@
 				96AA708D24C267FF00297869 /* AppDelegate.swift */,
 				96AA708F24C267FF00297869 /* SceneDelegate.swift */,
 				96AA709124C267FF00297869 /* DrillDetail.swift */,
-				96AA70A924C2708B00297869 /* ContentView.swift */,
+				96AA70A924C2708B00297869 /* DrillList.swift */,
 				96CC3A6C24C2E07D009A4796 /* PlayerContainerView.swift */,
 				96CC3A6F24C2E241009A4796 /* PlayerControlsView.swift */,
 				96CC3A6A24C2D72C009A4796 /* VideoPlayer.swift */,
@@ -204,7 +204,8 @@
 				96CC3A6B24C2D72C009A4796 /* VideoPlayer.swift in Sources */,
 				96AA708E24C267FF00297869 /* AppDelegate.swift in Sources */,
 				96AA709024C267FF00297869 /* SceneDelegate.swift in Sources */,
-				96AA70AA24C2708B00297869 /* ContentView.swift in Sources */,
+				96AA70AA24C2708B00297869 /* DrillList.swift in Sources */,
+				9677D69F24C3937800954F82 /* DrillRow.swift in Sources */,
 				96AA709224C267FF00297869 /* DrillDetail.swift in Sources */,
 				96451AFC24C2E993006632C2 /* Color.swift in Sources */,
 				96451AF624C2E82B006632C2 /* Constants.swift in Sources */,
@@ -212,7 +213,6 @@
 				96AA70A624C269BB00297869 /* Data.swift in Sources */,
 				96AA70A824C26A5300297869 /* Drill.swift in Sources */,
 				96CC3A6D24C2E07D009A4796 /* PlayerContainerView.swift in Sources */,
-				96451AFA24C2E8E4006632C2 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

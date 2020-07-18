@@ -9,7 +9,7 @@
 import SwiftUI
 
 
-struct Drill: Decodable {
+struct Drill: Decodable, Identifiable {
     var id: Int
     var title: String
     var targets: [target]

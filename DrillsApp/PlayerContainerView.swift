@@ -9,18 +9,54 @@
 import SwiftUI
 import AVKit
 
-struct PlayerContainerView : View {
+
+struct ImageOverlay: View {
+    var text:String
     
-  private let player: AVPlayer
-  init(player: AVPlayer) {
-    self.player = player
-  }
-  var body: some View {
-    VStack {
-      VideoPlayer(player: player)
-      PlayerControlsView(player: player)
+    var body: some View {
+        ZStack {
+            Text(text)
+                .font(.callout)
+                .padding(6)
+                .foregroundColor(.white)
+        }.background(Color.black)
+        .opacity(0.8)
+        .cornerRadius(10.0)
+        .padding(6)
     }
-  }
 }
 
 
+struct PlayerContainerView : View {
+    
+  private let player: AVPlayer
+  var videoTitle:String?
+    
+    init(player: AVPlayer, videoTitle: String) {
+        self.player     = player
+        self.videoTitle = videoTitle
+    }
+    
+  var body: some View {
+    VStack {
+    
+        if videoTitle == ""{
+            VideoPlayer(player: player)
+        }
+        else{
+            VideoPlayer(player: player)
+                .overlay(ImageOverlay(text: videoTitle ?? ""), alignment: .bottomLeading)
+        }
+        PlayerControlsView(player: player)
+    }
+  }
+    
+}
+
+
+
+struct PlayerContainerView_Previews: PreviewProvider {
+    static var previews: some View {
+        PlayerContainerView(player: AVPlayer(url: URL(string: mp4Data[0])!),  videoTitle: "Video title goes here")
+    }
+}
