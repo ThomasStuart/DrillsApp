@@ -1,0 +1,17 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "54f0c09b92ba5fb6147bb2442dc78109"
+build_time: [1595113811, 156180000]
+inputs:
+  "/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Video/VideoPlayer.swift": [1595107021, 186924761]
+  "/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/AppSetup/AppDelegate.swift": [1595027583, 534817523]
+  "/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/AppSetup/SceneDelegate.swift": [1595105630, 327273806]
+  "/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/DrillList.swift": [1595105969, 800093429]
+  "/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Views/DrillRow.swift": [1595107933, 425013644]
+  "/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/DrillDetail.swift": [1595112704, 112563354]
+  "/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Models/Color.swift": [1595060773, 519726631]
+  "/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Views/StepView.swift": [1595113804, 988680762]
+  "/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Models/Constants.swift": [1595060773, 528152544]
+  "/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Video/PlayerControlsView.swift": [1595059001, 372103868]
+  "/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Models/Data.swift": [1595112704, 104554263]
+  "/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Models/Drill.swift": [1595112403, 965638103]
+  "/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Video/PlayerContainerView.swift": [1595108057, 912984423]

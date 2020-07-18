@@ -18,11 +18,19 @@ struct StepView: View {
             Text( String(number) )
                 .font(.title)
                 .frame(alignment: .leading)
+                .padding()
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(Color.green, lineWidth: 2) )
                 
             Spacer()
                 .frame(width:20)
             Text(text)
-        }
+
+        }   .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 5))
+            .overlay(
+                RoundedRectangle(cornerRadius: 16)
+                    .stroke(Color.green, lineWidth: 2) )
     }
 }
 
