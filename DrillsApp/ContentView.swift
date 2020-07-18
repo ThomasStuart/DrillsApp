@@ -7,10 +7,11 @@
 //
 
 import SwiftUI
-
-struct ContentView: View {
+import AVKit
+  
+struct ContentView:View {
     var body: some View {
-        Text("Hello, W!")
+          PlayerContainerView(player: AVPlayer(url: URL(string: "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8")!))
     }
 }
 
@@ -18,4 +19,13 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
+
+struct PlayerView: UIViewRepresentable {
+  let player: AVPlayer
+  func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<PlayerView>) {
+  }
+  func makeUIView(context: Context) -> UIView {
+    return PlayerUIView(player: player)
+  }
 }
