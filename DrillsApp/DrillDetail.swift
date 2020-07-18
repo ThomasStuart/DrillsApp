@@ -9,10 +9,18 @@
 import SwiftUI
 import AVKit
 
+class StepNumber: ObservableObject {
+    @State var num:Int = 1
+    
+    func increment(){
+        self.num += 1
+    }
+}
+
 
 struct DrillDetail: View {
     var drill: Drill
-
+    
     var body: some View {
         
          VStack {
@@ -44,12 +52,14 @@ struct DrillDetail: View {
                     .font(.title)
 
                 ForEach(drill.steps, id: \.id){ s in
-                    Text( s.name ?? "")
-                        .font(.subheadline)
-                        .lineLimit(nil)
+                    StepView(number: s.num, text: s.name ?? "")
                 }
             }
         }
+    }
+    
+    func makeView(text:String) -> StepView {
+        return  StepView(number: 1, text: text)
     }
     
 }

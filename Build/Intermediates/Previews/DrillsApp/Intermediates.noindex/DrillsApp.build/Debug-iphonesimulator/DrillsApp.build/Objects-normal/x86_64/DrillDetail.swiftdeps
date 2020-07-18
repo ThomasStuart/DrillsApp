@@ -1,26 +1,40 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "StepNumber"
 - "DrillDetail"
 - "DrillDetail_Previews"
 provides-nominal:
+- "9DrillsApp10StepNumberC"
 - "9DrillsApp11DrillDetailV"
 - "9DrillsApp20DrillDetail_PreviewsV"
 provides-member:
+- ["9DrillsApp10StepNumberC", ""]
 - ["9DrillsApp11DrillDetailV", ""]
 - ["9DrillsApp20DrillDetail_PreviewsV", ""]
 provides-dynamic-lookup:
+- "$num"
+- "_num"
+- "increment"
+- "num"
 depends-top-level:
+- !private "+="
 - !private "/"
 - !private "??"
 - !private "AVPlayer"
 - "Drill"
 - "DrillDetail"
 - "DrillDetail_Previews"
-- !private "FloatLiteralType"
+- "FloatLiteralType"
 - !private "ForEach"
-- !private "IntegerLiteralType"
+- "Int"
+- "IntegerLiteralType"
+- "ObservableObject"
 - !private "PlayerContainerView"
 - "PreviewProvider"
+- "State"
+- "StepNumber"
+- "StepView"
+- "String"
 - !private "StringLiteralType"
 - !private "Text"
 - !private "UIScreen"
@@ -62,6 +76,7 @@ depends-member:
 - !private ["Se", "id"]
 - !private ["Se", "init"]
 - !private ["Se", "name"]
+- !private ["Se", "num"]
 - !private ["Se", "steps"]
 - !private ["Se", "subheadline"]
 - !private ["Se", "subscript"]
@@ -76,6 +91,8 @@ depends-member:
 - ["9DrillsApp11DrillDetailV", "Drill"]
 - !private ["9DrillsApp11DrillDetailV", "ForEach"]
 - !private ["9DrillsApp11DrillDetailV", "PlayerContainerView"]
+- ["9DrillsApp11DrillDetailV", "StepView"]
+- ["9DrillsApp11DrillDetailV", "String"]
 - !private ["9DrillsApp11DrillDetailV", "Text"]
 - !private ["9DrillsApp11DrillDetailV", "UIScreen"]
 - !private ["9DrillsApp11DrillDetailV", "URL"]
@@ -88,6 +105,7 @@ depends-member:
 - ["9DrillsApp11DrillDetailV", "deinit"]
 - ["9DrillsApp11DrillDetailV", "drill"]
 - ["9DrillsApp11DrillDetailV", "init"]
+- ["9DrillsApp11DrillDetailV", "makeView"]
 - !private ["9DrillsApp11DrillDetailV", "mp4Data"]
 - !private ["9DrillsApp20DrillDetail_PreviewsV", "DrillDetail"]
 - ["9DrillsApp20DrillDetail_PreviewsV", "Previews"]
@@ -100,6 +118,8 @@ depends-member:
 - ["9DrillsApp20DrillDetail_PreviewsV", "init"]
 - ["9DrillsApp20DrillDetail_PreviewsV", "platform"]
 - ["9DrillsApp20DrillDetail_PreviewsV", "previews"]
+- ["7SwiftUI15DynamicPropertyP", "init"]
+- ["7SwiftUI15DynamicPropertyP", "wrappedValue"]
 - !private ["7SwiftUI18DynamicViewContentP", "init"]
 - !private ["SE", "height"]
 - !private ["SE", "init"]
@@ -110,7 +130,6 @@ depends-member:
 - !private ["SQ", "font"]
 - !private ["SQ", "height"]
 - !private ["SQ", "init"]
-- !private ["SQ", "lineLimit"]
 - !private ["SQ", "main"]
 - !private ["SQ", "subheadline"]
 - !private ["SQ", "subscript"]
@@ -141,6 +160,12 @@ depends-member:
 - !private ["So8NSObjectP", "bounds"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "main"]
+- ["7Combine16ObservableObjectP", "ObjectWillChangePublisher"]
+- ["7Combine16ObservableObjectP", "State"]
+- ["7Combine16ObservableObjectP", ""]
+- ["7Combine16ObservableObjectP", "_Default_ObjectWillChangePublisher"]
+- !private ["7Combine16ObservableObjectP", "num"]
+- ["7Combine16ObservableObjectP", "objectWillChange"]
 - !private ["Sq", "subheadline"]
 - !private ["Sq", "title"]
 - !private ["9DrillsApp19PlayerContainerViewV", "deinit"]
@@ -158,9 +183,23 @@ depends-member:
 - !private ["Sm", "subscript"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["ST", "subscript"]
+- ["7SwiftUI5StateV", "init"]
+- ["7SwiftUI5StateV", "wrappedValue"]
+- ["9DrillsApp10StepNumberC", "$num"]
+- ["9DrillsApp10StepNumberC", "Int"]
+- ["9DrillsApp10StepNumberC", "ObjectWillChangePublisher"]
+- ["9DrillsApp10StepNumberC", "State"]
+- ["9DrillsApp10StepNumberC", "_Default_ObjectWillChangePublisher"]
+- !private ["9DrillsApp10StepNumberC", "_num"]
+- ["9DrillsApp10StepNumberC", "deinit"]
+- ["9DrillsApp10StepNumberC", "increment"]
+- ["9DrillsApp10StepNumberC", "init"]
+- ["9DrillsApp10StepNumberC", "num"]
+- ["9DrillsApp10StepNumberC", "objectWillChange"]
+- !private ["9DrillsApp8StepViewV", "deinit"]
+- !private ["9DrillsApp8StepViewV", "init"]
 - !private ["7SwiftUI4TextV", "font"]
 - !private ["7SwiftUI4TextV", "init"]
-- !private ["7SwiftUI4TextV", "lineLimit"]
 - !private ["So8UIScreenC", "bounds"]
 - !private ["So8UIScreenC", "main"]
 - !private ["So18UITraitEnvironmentP", "bounds"]
@@ -172,6 +211,7 @@ depends-member:
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "ForEach"]
 - !private ["7SwiftUI4ViewP", "PlayerContainerView"]
+- !private ["7SwiftUI4ViewP", "StepView"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "UIScreen"]
 - !private ["7SwiftUI4ViewP", "URL"]
@@ -185,7 +225,6 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "font"]
 - !private ["7SwiftUI4ViewP", "frame"]
 - !private ["7SwiftUI4ViewP", "init"]
-- !private ["7SwiftUI4ViewP", "lineLimit"]
 - !private ["7SwiftUI4ViewP", "mp4Data"]
 - !private ["7SwiftUI4ViewP", "subheadline"]
 - !private ["7SwiftUI4ViewP", "title"]
@@ -221,6 +260,7 @@ depends-member:
 - !private ["9DrillsApp7benefitV", "name"]
 - !private ["9DrillsApp4stepV", "id"]
 - !private ["9DrillsApp4stepV", "name"]
+- !private ["9DrillsApp4stepV", "num"]
 depends-nominal:
 - !private "So8AVPlayerC"
 - !private "7SwiftUI10AnimatableP"
@@ -238,6 +278,7 @@ depends-nominal:
 - !private "9DrillsApp5DrillV"
 - "9DrillsApp11DrillDetailV"
 - "9DrillsApp20DrillDetail_PreviewsV"
+- "7SwiftUI15DynamicPropertyP"
 - !private "7SwiftUI18DynamicViewContentP"
 - !private "SE"
 - !private "SQ"
@@ -252,6 +293,7 @@ depends-nominal:
 - !private "10Foundation19MutableDataProtocolP"
 - !private "So8NSObjectC"
 - !private "So8NSObjectP"
+- "7Combine16ObservableObjectP"
 - !private "Sq"
 - !private "9DrillsApp19PlayerContainerViewV"
 - "7SwiftUI15PreviewProviderP"
@@ -259,6 +301,9 @@ depends-nominal:
 - !private "Sm"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "ST"
+- "7SwiftUI5StateV"
+- "9DrillsApp10StepNumberC"
+- !private "9DrillsApp8StepViewV"
 - !private "7SwiftUI4TextV"
 - !private "So8UIScreenC"
 - !private "So18UITraitEnvironmentP"
@@ -322,4 +367,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ea5e38a002f8109d1ef30e51d42aaea9"
+interface-hash: "d91ef226b78074b7f43288528345ae3f"

@@ -1,14 +1,14 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "ImageOverlay"
+- "TilteOverlay"
 - "PlayerContainerView"
 - "PlayerContainerView_Previews"
 provides-nominal:
-- "9DrillsApp12ImageOverlayV"
+- "9DrillsApp12TilteOverlayV"
 - "9DrillsApp19PlayerContainerViewV"
 - "9DrillsApp28PlayerContainerView_PreviewsV"
 provides-member:
-- ["9DrillsApp12ImageOverlayV", ""]
+- ["9DrillsApp12TilteOverlayV", ""]
 - ["9DrillsApp19PlayerContainerViewV", ""]
 - ["9DrillsApp28PlayerContainerView_PreviewsV", ""]
 provides-dynamic-lookup:
@@ -19,7 +19,6 @@ depends-top-level:
 - "AssignmentPrecedence"
 - !private "Color"
 - !private "FloatLiteralType"
-- "ImageOverlay"
 - !private "IntegerLiteralType"
 - "PlayerContainerView"
 - "PlayerContainerView_Previews"
@@ -28,6 +27,7 @@ depends-top-level:
 - "String"
 - !private "StringLiteralType"
 - !private "Text"
+- "TilteOverlay"
 - !private "URL"
 - !private "VStack"
 - !private "VideoPlayer"
@@ -84,19 +84,6 @@ depends-member:
 - !private ["SH", "init"]
 - !private ["SH", "subscript"]
 - !private ["SH", "white"]
-- ["9DrillsApp12ImageOverlayV", "Body"]
-- !private ["9DrillsApp12ImageOverlayV", "Color"]
-- ["9DrillsApp12ImageOverlayV", "String"]
-- !private ["9DrillsApp12ImageOverlayV", "Text"]
-- ["9DrillsApp12ImageOverlayV", "View"]
-- !private ["9DrillsApp12ImageOverlayV", "ZStack"]
-- ["9DrillsApp12ImageOverlayV", "_Default_Body"]
-- ["9DrillsApp12ImageOverlayV", "_makeView"]
-- ["9DrillsApp12ImageOverlayV", "_makeViewList"]
-- ["9DrillsApp12ImageOverlayV", "body"]
-- ["9DrillsApp12ImageOverlayV", "deinit"]
-- ["9DrillsApp12ImageOverlayV", "init"]
-- ["9DrillsApp12ImageOverlayV", "text"]
 - !private ["SM", "subscript"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - !private ["So8NSObjectC", "init"]
@@ -105,9 +92,9 @@ depends-member:
 - !private ["Sq", "white"]
 - ["9DrillsApp19PlayerContainerViewV", "AVPlayer"]
 - ["9DrillsApp19PlayerContainerViewV", "Body"]
-- !private ["9DrillsApp19PlayerContainerViewV", "ImageOverlay"]
 - !private ["9DrillsApp19PlayerContainerViewV", "PlayerControlsView"]
 - ["9DrillsApp19PlayerContainerViewV", "String"]
+- !private ["9DrillsApp19PlayerContainerViewV", "TilteOverlay"]
 - !private ["9DrillsApp19PlayerContainerViewV", "VStack"]
 - !private ["9DrillsApp19PlayerContainerViewV", "VideoPlayer"]
 - ["9DrillsApp19PlayerContainerViewV", "View"]
@@ -154,6 +141,19 @@ depends-member:
 - !private ["7SwiftUI4TextV", "font"]
 - !private ["7SwiftUI4TextV", "init"]
 - !private ["7SwiftUI4TextV", "padding"]
+- ["9DrillsApp12TilteOverlayV", "Body"]
+- !private ["9DrillsApp12TilteOverlayV", "Color"]
+- ["9DrillsApp12TilteOverlayV", "String"]
+- !private ["9DrillsApp12TilteOverlayV", "Text"]
+- ["9DrillsApp12TilteOverlayV", "View"]
+- !private ["9DrillsApp12TilteOverlayV", "ZStack"]
+- ["9DrillsApp12TilteOverlayV", "_Default_Body"]
+- ["9DrillsApp12TilteOverlayV", "_makeView"]
+- ["9DrillsApp12TilteOverlayV", "_makeViewList"]
+- ["9DrillsApp12TilteOverlayV", "body"]
+- ["9DrillsApp12TilteOverlayV", "deinit"]
+- ["9DrillsApp12TilteOverlayV", "init"]
+- ["9DrillsApp12TilteOverlayV", "text"]
 - !private ["7SwiftUI29UIViewControllerRepresentableP", "init"]
 - !private ["7SwiftUI29UIViewControllerRepresentableP", "overlay"]
 - !private ["10Foundation3URLV", "init"]
@@ -163,9 +163,9 @@ depends-member:
 - !private ["9DrillsApp11VideoPlayerV", "overlay"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "Color"]
-- !private ["7SwiftUI4ViewP", "ImageOverlay"]
 - !private ["7SwiftUI4ViewP", "PlayerControlsView"]
 - !private ["7SwiftUI4ViewP", "Text"]
+- !private ["7SwiftUI4ViewP", "TilteOverlay"]
 - !private ["7SwiftUI4ViewP", "VStack"]
 - !private ["7SwiftUI4ViewP", "VideoPlayer"]
 - !private ["7SwiftUI4ViewP", "ZStack"]
@@ -236,7 +236,6 @@ depends-nominal:
 - !private "7SwiftUI4FontV"
 - !private "7SwiftUI7GestureP"
 - !private "SH"
-- "9DrillsApp12ImageOverlayV"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
 - !private "So8NSObjectC"
@@ -252,6 +251,7 @@ depends-nominal:
 - !private "ST"
 - !private "7SwiftUI10ShapeStyleP"
 - !private "7SwiftUI4TextV"
+- "9DrillsApp12TilteOverlayV"
 - !private "7SwiftUI29UIViewControllerRepresentableP"
 - !private "10Foundation3URLV"
 - !private "7SwiftUI6VStackV"
@@ -313,4 +313,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "9ac2556dba1d2f26b15b62e8fcf84262"
+interface-hash: "7d67ba9b5ba852c200e5aee9d603d86f"

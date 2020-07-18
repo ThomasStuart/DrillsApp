@@ -39,6 +39,9 @@ depends-top-level:
 - "target"
 - !private "~="
 depends-member:
+- ["s18AdditiveArithmeticP", "init"]
+- ["Sz", "init"]
+- ["s7CVarArgP", "init"]
 - ["s9CodingKeyP", "=="]
 - ["s9CodingKeyP", "RawValue"]
 - ["s9CodingKeyP", ""]
@@ -98,6 +101,7 @@ depends-member:
 - ["9DrillsApp4stepV10CodingKeysO", "stringValue"]
 - ["9DrillsApp6targetV10CodingKeysO", "stringValue"]
 - ["9DrillsApp7benefitV10CodingKeysO", "stringValue"]
+- ["SL", "init"]
 - ["s28CustomDebugStringConvertibleP", "=="]
 - ["s28CustomDebugStringConvertibleP", "RawValue"]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -128,6 +132,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "rawValue"]
 - ["s23CustomStringConvertibleP", "stringValue"]
 - ["Se", "ID"]
+- ["Se", "Int"]
 - ["Se", "UUID"]
 - ["Se", ""]
 - ["Se", "_Default_ID"]
@@ -171,6 +176,8 @@ depends-member:
 - ["SQ", "intValue"]
 - ["SQ", "rawValue"]
 - ["SQ", "stringValue"]
+- ["s27ExpressibleByIntegerLiteralP", "init"]
+- ["s17FixedWidthIntegerP", "init"]
 - ["SH", "=="]
 - ["SH", "RawValue"]
 - ["SH", ""]
@@ -196,10 +203,14 @@ depends-member:
 - !private ["s12IdentifiableP", "targets"]
 - !private ["s12IdentifiableP", "title"]
 - !private ["s12IdentifiableP", "videoURL"]
+- ["Si", "init"]
 - !private ["s22KeyedDecodingContainerV", "decode"]
 - !private ["s22KeyedDecodingContainerV", "decodeIfPresent"]
 - !private ["s30KeyedDecodingContainerProtocolP", "decode"]
 - !private ["s30KeyedDecodingContainerProtocolP", "decodeIfPresent"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["Sj", "init"]
 - ["SY", "=="]
 - ["SY", "RawValue"]
 - ["SY", ""]
@@ -215,7 +226,15 @@ depends-member:
 - ["SY", "rawValue"]
 - ["SY", "stringValue"]
 - ["10Foundation20ReferenceConvertibleP", "init"]
+- ["s10SIMDScalarP", "init"]
+- ["SZ", "init"]
+- ["s13SignedNumericP", "init"]
+- ["Sx", "init"]
 - ["10Foundation4UUIDV", "init"]
+- ["s30_CustomPlaygroundQuickLookableP", "init"]
+- ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- ["7SwiftUI18_FormatSpecifiableP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - ["9DrillsApp7benefitV", "CodingKey"]
 - ["9DrillsApp7benefitV", "CodingKeys"]
@@ -228,6 +247,7 @@ depends-member:
 - ["9DrillsApp7benefitV", "name"]
 - ["9DrillsApp4stepV", "CodingKey"]
 - ["9DrillsApp4stepV", "CodingKeys"]
+- ["9DrillsApp4stepV", "Int"]
 - ["9DrillsApp4stepV", "String"]
 - ["9DrillsApp4stepV", "UUID"]
 - !private ["9DrillsApp4stepV", "_findStringSwitchCase"]
@@ -235,6 +255,7 @@ depends-member:
 - ["9DrillsApp4stepV", "id"]
 - ["9DrillsApp4stepV", "init"]
 - ["9DrillsApp4stepV", "name"]
+- ["9DrillsApp4stepV", "num"]
 - ["9DrillsApp6targetV", "CodingKey"]
 - ["9DrillsApp6targetV", "CodingKeys"]
 - ["9DrillsApp6targetV", "String"]
@@ -245,6 +266,9 @@ depends-member:
 - ["9DrillsApp6targetV", "init"]
 - ["9DrillsApp6targetV", "name"]
 depends-nominal:
+- "s18AdditiveArithmeticP"
+- "Sz"
+- "s7CVarArgP"
 - "s9CodingKeyP"
 - "9DrillsApp4stepV10CodingKeysO"
 - "9DrillsApp6targetV10CodingKeysO"
@@ -291,6 +315,7 @@ depends-nominal:
 - "9DrillsApp4stepV10CodingKeysO"
 - "9DrillsApp6targetV10CodingKeysO"
 - "9DrillsApp7benefitV10CodingKeysO"
+- "SL"
 - "s28CustomDebugStringConvertibleP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
@@ -299,14 +324,28 @@ depends-nominal:
 - "9DrillsApp5DrillV"
 - "SE"
 - "SQ"
+- "s27ExpressibleByIntegerLiteralP"
+- "s17FixedWidthIntegerP"
 - "SH"
 - !private "s6HasherV"
 - "s12IdentifiableP"
+- "Si"
 - !private "s22KeyedDecodingContainerV"
 - !private "s30KeyedDecodingContainerProtocolP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "Sj"
 - "SY"
 - "10Foundation20ReferenceConvertibleP"
+- "s10SIMDScalarP"
+- "SZ"
+- "s13SignedNumericP"
+- "Sx"
 - "10Foundation4UUIDV"
+- "s30_CustomPlaygroundQuickLookableP"
+- "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "7SwiftUI18_FormatSpecifiableP"
+- "s35_HasCustomAnyHashableRepresentationP"
 - "s21_ObjectiveCBridgeableP"
 - "9DrillsApp7benefitV"
 - "9DrillsApp4stepV"
@@ -355,4 +394,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "7e09b41d5be74300be2bf056b51fa51c"
+interface-hash: "d94bd85d4dbff812b2f4acdd5a0df0af"

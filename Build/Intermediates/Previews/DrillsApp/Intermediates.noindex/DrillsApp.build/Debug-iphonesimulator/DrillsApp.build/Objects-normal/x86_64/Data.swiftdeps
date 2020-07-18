@@ -1,11 +1,14 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "tempData"
 - "drillData"
+- "setStepNums"
 - "load"
 provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
+- !private "+"
 - "AssignmentPrecedence"
 - !private "Bundle"
 - !private "Data"
@@ -19,60 +22,151 @@ depends-top-level:
 - "drillData"
 - !private "fatalError"
 - "load"
+- "setStepNums"
+- "tempData"
 depends-member:
+- !private ["Sa", "indices"]
+- !private ["Sa", "subscript"]
+- !private ["s10ArraySliceV", "num"]
+- !private ["s10ArraySliceV", "steps"]
+- !private ["SK", "indices"]
 - !private ["SK", "init"]
+- !private ["SK", "num"]
+- !private ["SK", "steps"]
+- !private ["SK", "subscript"]
 - !private ["So8NSBundleC", "main"]
 - !private ["So8NSBundleC", "url"]
+- !private ["s7CVarArgP", "indices"]
 - !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "url"]
+- !private ["Sl", "indices"]
 - !private ["Sl", "init"]
+- !private ["Sl", "num"]
+- !private ["Sl", "steps"]
+- !private ["Sl", "subscript"]
+- !private ["10Foundation15ContiguousBytesP", "indices"]
 - !private ["10Foundation15ContiguousBytesP", "init"]
+- !private ["10Foundation15ContiguousBytesP", "num"]
+- !private ["10Foundation15ContiguousBytesP", "steps"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "indices"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "num"]
+- !private ["s28CustomDebugStringConvertibleP", "steps"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "url"]
+- !private ["s17CustomReflectableP", "indices"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "num"]
+- !private ["s17CustomReflectableP", "steps"]
+- !private ["s17CustomReflectableP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
 - !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "indices"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "num"]
+- !private ["s23CustomStringConvertibleP", "steps"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "url"]
 - !private ["10Foundation4DataV", "init"]
+- !private ["10Foundation12DataProtocolP", "indices"]
 - !private ["10Foundation12DataProtocolP", "init"]
+- !private ["10Foundation12DataProtocolP", "num"]
+- !private ["10Foundation12DataProtocolP", "steps"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["Se", "indices"]
 - !private ["Se", "init"]
+- !private ["Se", "num"]
+- !private ["Se", "steps"]
+- !private ["Se", "subscript"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - ["9DrillsApp5DrillV", "deinit"]
+- !private ["9DrillsApp5DrillV", "steps"]
+- !private ["SE", "indices"]
 - !private ["SE", "init"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "indices"]
 - !private ["SQ", "init"]
 - !private ["SQ", "main"]
+- !private ["SQ", "num"]
+- !private ["SQ", "steps"]
+- !private ["SQ", "subscript"]
 - !private ["SQ", "url"]
+- !private ["s25ExpressibleByArrayLiteralP", "indices"]
+- !private ["s25ExpressibleByArrayLiteralP", "num"]
+- !private ["s25ExpressibleByArrayLiteralP", "steps"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["SH", "indices"]
 - !private ["SH", "init"]
 - !private ["SH", "main"]
+- !private ["SH", "num"]
+- !private ["SH", "steps"]
+- !private ["SH", "subscript"]
 - !private ["SH", "url"]
+- !private ["s12IdentifiableP", "steps"]
 - !private ["10Foundation11JSONDecoderC", "decode"]
 - !private ["10Foundation11JSONDecoderC", "init"]
+- !private ["SM", "indices"]
 - !private ["SM", "init"]
+- !private ["SM", "num"]
+- !private ["SM", "steps"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "indices"]
 - !private ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - !private ["So8NSObjectC", "main"]
 - !private ["So8NSObjectC", "url"]
 - !private ["So8NSObjectP", "main"]
 - !private ["So8NSObjectP", "url"]
+- !private ["Sk", "indices"]
 - !private ["Sk", "init"]
+- !private ["Sk", "num"]
+- !private ["Sk", "steps"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "indices"]
 - !private ["Sm", "init"]
+- !private ["Sm", "num"]
+- !private ["Sm", "steps"]
+- !private ["Sm", "subscript"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["ST", "indices"]
 - !private ["ST", "init"]
+- !private ["ST", "num"]
+- !private ["ST", "steps"]
+- !private ["ST", "subscript"]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["7Combine15TopLevelDecoderP", "decode"]
 - !private ["7Combine15TopLevelDecoderP", "init"]
+- !private ["s14_ArrayProtocolP", "indices"]
+- !private ["s14_ArrayProtocolP", "num"]
+- !private ["s14_ArrayProtocolP", "steps"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "indices"]
+- !private ["s24_DestructorSafeContainerP", "num"]
+- !private ["s24_DestructorSafeContainerP", "steps"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s19_HasContiguousBytesP", "indices"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "indices"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "url"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "url"]
+- !private ["s21_ObjectiveCBridgeableP", "indices"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["9DrillsApp4stepV", "num"]
 depends-nominal:
+- !private "Sa"
+- !private "s10ArraySliceV"
 - !private "SK"
 - !private "So8NSBundleC"
 - !private "s7CVarArgP"
@@ -88,7 +182,9 @@ depends-nominal:
 - "9DrillsApp5DrillV"
 - !private "SE"
 - !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
 - !private "SH"
+- !private "s12IdentifiableP"
 - !private "10Foundation11JSONDecoderC"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
@@ -101,9 +197,14 @@ depends-nominal:
 - !private "s27StringInterpolationProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "7Combine15TopLevelDecoderP"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"
+- !private "9DrillsApp4stepV"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
@@ -148,4 +249,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "93b0507da0f060e29317fccb83c076e0"
+interface-hash: "ae2efb8cde98845a9baa42a43ba77a9f"

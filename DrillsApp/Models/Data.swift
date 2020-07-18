@@ -9,7 +9,18 @@
 import SwiftUI
 
 
-let drillData: [Drill] = load("Drills.json")
+var tempData:  [Drill]   = load("Drills.json")
+var drillData: [Drill]  = setStepNums(dd: tempData)
+
+func setStepNums(dd: [Drill]) -> [Drill]{
+    var r = dd
+    for i in r.indices{
+        for j in dd[i].steps.indices{
+            r[i].steps[j].num = j+1
+        }
+    }
+    return r
+}
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

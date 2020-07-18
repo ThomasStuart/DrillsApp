@@ -10,6 +10,7 @@
 		96451AF624C2E82B006632C2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96451AF524C2E82B006632C2 /* Constants.swift */; };
 		96451AFC24C2E993006632C2 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96451AFB24C2E993006632C2 /* Color.swift */; };
 		9677D69F24C3937800954F82 /* DrillRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677D69E24C3937800954F82 /* DrillRow.swift */; };
+		9677D6A124C3A3E500954F82 /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677D6A024C3A3E500954F82 /* StepView.swift */; };
 		96AA708E24C267FF00297869 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA708D24C267FF00297869 /* AppDelegate.swift */; };
 		96AA709024C267FF00297869 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA708F24C267FF00297869 /* SceneDelegate.swift */; };
 		96AA709224C267FF00297869 /* DrillDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AA709124C267FF00297869 /* DrillDetail.swift */; };
@@ -29,6 +30,7 @@
 		96451AF524C2E82B006632C2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		96451AFB24C2E993006632C2 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		9677D69E24C3937800954F82 /* DrillRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillRow.swift; sourceTree = "<group>"; };
+		9677D6A024C3A3E500954F82 /* StepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
 		96AA708A24C267FF00297869 /* DrillsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrillsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96AA708D24C267FF00297869 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96AA708F24C267FF00297869 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,8 +63,28 @@
 			isa = PBXGroup;
 			children = (
 				9677D69E24C3937800954F82 /* DrillRow.swift */,
+				9677D6A024C3A3E500954F82 /* StepView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9677D6A324C3A79900954F82 /* AppSetup */ = {
+			isa = PBXGroup;
+			children = (
+				96AA708D24C267FF00297869 /* AppDelegate.swift */,
+				96AA708F24C267FF00297869 /* SceneDelegate.swift */,
+			);
+			path = AppSetup;
+			sourceTree = "<group>";
+		};
+		9677D6A424C3A7B500954F82 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				96CC3A6C24C2E07D009A4796 /* PlayerContainerView.swift */,
+				96CC3A6F24C2E241009A4796 /* PlayerControlsView.swift */,
+				96CC3A6A24C2D72C009A4796 /* VideoPlayer.swift */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 		96AA708124C267FF00297869 = {
@@ -84,16 +106,13 @@
 		96AA708C24C267FF00297869 /* DrillsApp */ = {
 			isa = PBXGroup;
 			children = (
-				96451AF824C2E8C1006632C2 /* Views */,
+				9677D6A324C3A79900954F82 /* AppSetup */,
 				96AA70A424C269A100297869 /* Models */,
 				96AA70A124C2694D00297869 /* Resources */,
-				96AA708D24C267FF00297869 /* AppDelegate.swift */,
-				96AA708F24C267FF00297869 /* SceneDelegate.swift */,
+				96451AF824C2E8C1006632C2 /* Views */,
 				96AA709124C267FF00297869 /* DrillDetail.swift */,
 				96AA70A924C2708B00297869 /* DrillList.swift */,
-				96CC3A6C24C2E07D009A4796 /* PlayerContainerView.swift */,
-				96CC3A6F24C2E241009A4796 /* PlayerControlsView.swift */,
-				96CC3A6A24C2D72C009A4796 /* VideoPlayer.swift */,
+				9677D6A424C3A7B500954F82 /* Video */,
 				96AA709324C2680300297869 /* Assets.xcassets */,
 				96AA709824C2680300297869 /* LaunchScreen.storyboard */,
 				96AA709B24C2680300297869 /* Info.plist */,
@@ -208,6 +227,7 @@
 				9677D69F24C3937800954F82 /* DrillRow.swift in Sources */,
 				96AA709224C267FF00297869 /* DrillDetail.swift in Sources */,
 				96451AFC24C2E993006632C2 /* Color.swift in Sources */,
+				9677D6A124C3A3E500954F82 /* StepView.swift in Sources */,
 				96451AF624C2E82B006632C2 /* Constants.swift in Sources */,
 				96CC3A7024C2E241009A4796 /* PlayerControlsView.swift in Sources */,
 				96AA70A624C269BB00297869 /* Data.swift in Sources */,

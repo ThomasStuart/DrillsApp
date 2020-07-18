@@ -42,7 +42,8 @@ struct benefit: Decodable {
 struct step: Decodable {
     let id = UUID()
     let name: String?
-
+    var num = Int()
+    
     enum CodingKeys: String, CodingKey {
         case name = "name"
     }
