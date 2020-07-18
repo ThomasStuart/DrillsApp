@@ -17,6 +17,9 @@ struct DrillDetail: View {
         
          VStack {
             
+            Text(drill.title)
+                .font(.title)
+            
             VStack{
                 HStack{
                 Text("Targets:")
@@ -29,9 +32,10 @@ struct DrillDetail: View {
                 }
             }
         
+            Text(drill.videoURL ?? "no data")
+            
              VStack{
-                 VideoPlayer(player: AVPlayer(url: URL(string: mp4Data[0])!))
-                 
+                 PlayerContainerView(player: AVPlayer(url: URL(string: mp4Data[0])!))
              }
             .frame(height: UIScreen.main.bounds.height / 3.5)
             
@@ -46,6 +50,16 @@ struct DrillDetail: View {
                 }
             }
             
+            VStack{
+                Text("Steps:")
+                    .font(.title)
+
+                ForEach(drill.steps, id: \.id){ s in
+                    Text( s.name ?? "")
+                        .font(.subheadline)
+                        .lineLimit(nil)
+                }
+            }
         }
     }
     

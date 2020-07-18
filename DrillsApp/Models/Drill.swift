@@ -40,6 +40,7 @@ struct benefit: Decodable {
 
 
 struct step: Decodable {
+    let id = UUID()
     let name: String?
 
     enum CodingKeys: String, CodingKey {
