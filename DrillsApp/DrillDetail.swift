@@ -29,7 +29,7 @@ struct DrillDetail: View {
                 .font(.title)
             
         
-            Text(drill.videoURL ?? "no data")
+            //Text(drill.videoURL ?? "no data")
             
              VStack{
                 PlayerContainerView(player: AVPlayer(url: URL(string: mp4Data[0])!), videoTitle: "")
@@ -47,7 +47,8 @@ struct DrillDetail: View {
                 }
             }
             
-            VStack{
+            //spacing setting adjust spacing between Stack elements 
+            VStack(spacing: 20){
                 Text("Steps:")
                     .font(.title)
 

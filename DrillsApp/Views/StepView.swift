@@ -27,10 +27,13 @@ struct StepView: View {
                 .frame(width:20)
             Text(text)
 
+            Spacer()
+            
         }   .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 5))
             .overlay(
                 RoundedRectangle(cornerRadius: 16)
                     .stroke(Color.green, lineWidth: 2) )
+    
     }
 }
 
