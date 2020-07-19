@@ -23,7 +23,6 @@ depends-top-level:
 - !private "fatalError"
 - "load"
 - !private "mySampleMovieLinkData"
-- !private "print"
 - "setStepNums"
 - "tempData"
 depends-member:

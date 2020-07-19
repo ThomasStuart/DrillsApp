@@ -14,9 +14,10 @@ struct DrillRow: View {
     
     var body: some View {
         HStack{
-            
              VStack{
-                PlayerContainerView(player: AVPlayer(url: URL(string: drill.videoURL ?? "")!), videoTitle: drill.title, url: drill.videoURL ?? "")
+                ThumbnailView(url: drill.videoURL ?? "")
+                    .overlay(TitleOverlay(text: drill.title ?? ""), alignment: .bottomLeading)
+               Image(systemName: "play")
              }
             .frame(height: UIScreen.main.bounds.height / 3.5)
         }
@@ -27,9 +28,9 @@ struct DrillRow_Previews: PreviewProvider {
     static var previews: some View {
     
       Group {
-        DrillRow(drill: drillData[0])
-        DrillRow(drill: drillData[1])
+        DrillRow(drill: drillData[2])
+        DrillRow(drill: drillData[3])
       }
-        .previewLayout(.fixed(width:300, height:400))
+       // .previewLayout(.fixed(width:300, height:400))
     }
 }
