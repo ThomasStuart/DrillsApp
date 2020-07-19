@@ -1,5 +1,10 @@
 # Drills App 
 
+## Screenshots Of Views
+
+![alt text](https://thomasmedia.s3.us-east-2.amazonaws.com/DrillsTableView.png)  
+![alt text](https://thomasmedia.s3.us-east-2.amazonaws.com/DrillsDetailView.png) 
+
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
