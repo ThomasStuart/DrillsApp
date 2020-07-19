@@ -26,7 +26,7 @@ struct DrillDetail: View {
                  VStack{
                     PlayerContainerView(player: AVPlayer(url: URL(string: drill.videoURL ?? "")!), videoTitle: "",url: drill.videoURL ?? "")
                  }
-                .frame(height: UIScreen.main.bounds.height / 3.5)
+                 .frame(height: C.VID_HEIGHT)
                 
                 
                 VStack{

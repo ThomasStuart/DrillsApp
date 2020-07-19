@@ -22,8 +22,8 @@ func createThumbnailOfVideoFromRemoteUrl(url: String) -> UIImage? {
     let assetImgGenerate = AVAssetImageGenerator(asset: asset)
     assetImgGenerate.appliesPreferredTrackTransform = true
     //Can set this to improve performance if target size is known before hand
-    assetImgGenerate.maximumSize = CGSize(width:UIScreen.main.bounds.width-50,height:(UIScreen.main.bounds.height / 3.50))
-    let time = CMTimeMakeWithSeconds(4.0, preferredTimescale: 600)
+    assetImgGenerate.maximumSize = CGSize(width:UIScreen.main.bounds.width-50,height: C.VID_HEIGHT)
+    let time = CMTimeMakeWithSeconds(C.SECONDS_INTO_VIDEO, preferredTimescale: 600)
     do {
         let img = try assetImgGenerate.copyCGImage(at: time, actualTime: nil)
         let thumbnail = UIImage(cgImage: img)

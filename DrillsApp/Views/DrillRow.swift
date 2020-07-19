@@ -19,7 +19,7 @@ struct DrillRow: View {
                     .overlay(TitleOverlay(text: drill.title ?? ""), alignment: .bottomLeading)
                Image(systemName: "play")
              }
-            .frame(height: UIScreen.main.bounds.height / 3.5)
+             .frame(height: C.VID_HEIGHT)
         }
     }
 }
