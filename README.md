@@ -2,11 +2,9 @@
 
 ## Screenshots Of Views
 
-![](https://thomasmedia.s3.us-east-2.amazonaws.com/DrillsTableView.png | height=500)  
-![](https://thomasmedia.s3.us-east-2.amazonaws.com/DrillsDetailView.png | height=500) 
-<p>
-<img src="https://thomasmedia.s3.us-east-2.amazonaws.com/DrillsTableView.png " height="500">
-</p>
+![alt text](https://thomasmedia.s3.us-east-2.amazonaws.com/DrillsTableView.png )  
+![alt text](https://thomasmedia.s3.us-east-2.amazonaws.com/DrillsDetailView.png) 
+
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
