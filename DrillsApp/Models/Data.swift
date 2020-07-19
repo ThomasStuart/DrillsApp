@@ -10,19 +10,12 @@ import SwiftUI
 
 
 var tempData:  [Drill]   = load("Drills.json")
-var drillData: [Drill]  = setStepNums(dd: tempData)
+var drillData: [Drill]   = reoloadWithStepCount(dd: tempData)
 
-func setStepNums(dd: [Drill]) -> [Drill]{
-    var r = dd
-    for i in r.indices{
-        r[i].videoURL = mySampleMovieLinkData[i]
-        for j in dd[i].steps.indices{
-            r[i].steps[j].num = j+1
-        }
-    }
-    return r
-}
 
+/* load is responsible for parsing the "Drills.json" to extract the data and
+      put the data in the list tempData.
+ */
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
     
@@ -43,4 +36,22 @@ func load<T: Decodable>(_ filename: String) -> T {
     } catch {
         fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
     }
+}
+
+
+/*  reoloadWithStepCount essentially copies over the data that has been stored in the tempData
+      but ADDS the correct step count for each step.  This is important for th DrillDetail View.
+      Cannot increment the step count inside of the view so this function is vital.  However
+      it is innefficent beacuse it copies over the data and has to go through it again.
+      I would change the json so that step numbers were included.
+ */
+func reoloadWithStepCount(dd: [Drill]) -> [Drill]{
+    var r = dd //r stands for the return array
+    for i in r.indices{
+        r[i].videoURL = mySampleMovieLinkData[i]  // TODO:: REMOVE THIS LINE ONCE PERMISSION IS GRANTED TO ACCESS LINKS
+        for j in dd[i].steps.indices{
+            r[i].steps[j].num = j+1
+        }
+    }
+    return r
 }
