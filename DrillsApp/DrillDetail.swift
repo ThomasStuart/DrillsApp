@@ -17,40 +17,39 @@ struct DrillDetail: View {
     
     var body: some View {
         
-         VStack {
-            
-            Text(drill.title)
-                .font(.title)
-            
-        
-            //Text(drill.videoURL ?? "no data")
-            
-             VStack{
-                PlayerContainerView(player: AVPlayer(url: URL(string: drill.videoURL ?? "")!), videoTitle: "",url: drill.videoURL ?? "")
-             }
-            .frame(height: UIScreen.main.bounds.height / 3.5)
-            
-            
-            VStack{
-                Text("Benefits:")
+        List{
+             VStack {
+                
+                Text(drill.title)
                     .font(.title)
+                            
+                 VStack{
+                    PlayerContainerView(player: AVPlayer(url: URL(string: drill.videoURL ?? "")!), videoTitle: "",url: drill.videoURL ?? "")
+                 }
+                .frame(height: UIScreen.main.bounds.height / 3.5)
+                
+                
+                VStack{
+                    Text("Benefits:")
+                        .font(.title)
 
-                ForEach(drill.benefits, id: \.id){ s in
-                    Text( s.name ?? "")
-                        .font(.subheadline)
+                    ForEach(drill.benefits, id: \.id){ s in
+                        Text( s.name ?? "")
+                            .font(.subheadline)
+                    }
                 }
-            }
-            
-            Spacer()
-                .frame(height: 50)
-            
-            //spacing setting adjust spacing between Stack elements
-            VStack(spacing: 20){
-                Text("Steps:")
-                    .font(.title)
+                
+                Spacer()
+                    .frame(height: 50)
+                
+                //spacing setting adjust spacing between Stack elements
+                VStack(spacing: 20){
+                    Text("Steps:")
+                        .font(.title)
 
-                ForEach(drill.steps, id: \.id){ s in
-                    StepView(number: s.num, text: s.name ?? "")
+                    ForEach(drill.steps, id: \.id){ s in
+                        StepView(number: s.num, text: s.name ?? "")
+                    }
                 }
             }
         }

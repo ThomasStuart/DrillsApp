@@ -87,6 +87,6 @@ struct PlayerContainerView : View {
 
 struct PlayerContainerView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerContainerView(player: AVPlayer(url: URL(string: mp4Data[0])!),  videoTitle: "Video title goes here", url: mp4Data[0])
+        PlayerContainerView(player: AVPlayer(url: URL(string: mySampleMovieLinkData[0])!),  videoTitle: "Video title goes here", url: mySampleMovieLinkData[0])
     }
 }

@@ -109,11 +109,11 @@
 			isa = PBXGroup;
 			children = (
 				9677D6A324C3A79900954F82 /* AppSetup */,
-				96AA70A424C269A100297869 /* Models */,
 				96AA70A124C2694D00297869 /* Resources */,
+				96AA70A424C269A100297869 /* Models */,
 				96451AF824C2E8C1006632C2 /* Views */,
-				96AA709124C267FF00297869 /* DrillDetail.swift */,
 				96AA70A924C2708B00297869 /* DrillList.swift */,
+				96AA709124C267FF00297869 /* DrillDetail.swift */,
 				9677D6A424C3A7B500954F82 /* Video */,
 				96AA709324C2680300297869 /* Assets.xcassets */,
 				96AA709824C2680300297869 /* LaunchScreen.storyboard */,
@@ -134,6 +134,7 @@
 		96AA70A124C2694D00297869 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9677D6A524C3BBE500954F82 /* SampleURLs.swift */,
 				96AA70A224C2696F00297869 /* Drills.json */,
 			);
 			path = Resources;
@@ -146,7 +147,6 @@
 				96AA70A724C26A5300297869 /* Drill.swift */,
 				96451AF524C2E82B006632C2 /* Constants.swift */,
 				96451AFB24C2E993006632C2 /* Color.swift */,
-				9677D6A524C3BBE500954F82 /* SampleURLs.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";

@@ -15,7 +15,8 @@ var drillData: [Drill]  = setStepNums(dd: tempData)
 func setStepNums(dd: [Drill]) -> [Drill]{
     var r = dd
     for i in r.indices{
-        r[i].videoURL = mp4Data[i]
+        print(r[i].videoURL)
+        r[i].videoURL = mySampleMovieLinkData[i]
         print(r[i].videoURL)
         for j in dd[i].steps.indices{
             r[i].steps[j].num = j+1
