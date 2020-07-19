@@ -2,8 +2,8 @@
 
 ## Screenshots Of Views
 
-![alt text](https://thomasmedia.s3.us-east-2.amazonaws.com/DrillsTableView.png)  
-![alt text](https://thomasmedia.s3.us-east-2.amazonaws.com/DrillsDetailView.png) 
+![alt text](https://thomasmedia.s3.us-east-2.amazonaws.com/DrillsTableView.png | height=500)  
+![alt text](https://thomasmedia.s3.us-east-2.amazonaws.com/DrillsDetailView.png | height=500) 
 
 ## Video Walkthrough
 
