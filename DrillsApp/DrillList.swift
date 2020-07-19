@@ -10,17 +10,24 @@ import SwiftUI
 import AVKit
 
 
-let mp4Data = ["https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4", "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"]
+
 
 struct DrillListView: View {
+    
         var body: some View {
-            NavigationView {
-                List(drillData) { drill in
-                    NavigationLink(destination: DrillDetail(drill: drill)) {
-                        DrillRow(drill: drill)
+            VStack{
+                Text("Golf AI")
+                   .font(.system(size: 30, weight: .heavy, design: .default))
+                
+                    NavigationView {
+                        List(drillData) { drill in
+                            NavigationLink(destination: DrillDetail(drill: drill)) {
+                                DrillRow(drill: drill)
+                            }
+                        }
+                        .navigationBarTitle(Text("Drills: "))
+                        
                     }
-                }
-                .navigationBarTitle(Text("Drills"))
             }
         }
   }

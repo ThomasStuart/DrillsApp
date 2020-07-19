@@ -12,13 +12,9 @@ import AVKit
 struct VideoPlayer : UIViewControllerRepresentable {
     
     var player:AVPlayer
-//    var text: CATextLayer
     
     init(player: AVPlayer) {
         self.player = player
-//        self.text   = CATextLayer()
-//        text.string = "test"
-//        text.foregroundColor = UIColor.green.cgColor
      }
      
     func makeUIViewController(context: UIViewControllerRepresentableContext<VideoPlayer>) -> AVPlayerViewController {

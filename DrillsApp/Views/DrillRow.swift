@@ -16,7 +16,7 @@ struct DrillRow: View {
         HStack{
             
              VStack{
-                PlayerContainerView(player: AVPlayer(url: URL(string: mp4Data[0])!), videoTitle: drill.title)
+                PlayerContainerView(player: AVPlayer(url: URL(string: drill.videoURL ?? "")!), videoTitle: drill.title, url: drill.videoURL ?? "")
              }
             .frame(height: UIScreen.main.bounds.height / 3.5)
         }

@@ -1,6 +1,5 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "mp4Data"
 - "DrillListView"
 - "DrillListView_Previews"
 provides-nominal:
@@ -15,16 +14,22 @@ depends-top-level:
 - "DrillListView"
 - "DrillListView_Previews"
 - !private "DrillRow"
+- "FloatLiteralType"
+- !private "IntegerLiteralType"
 - !private "List"
 - !private "NavigationLink"
 - !private "NavigationView"
 - "PreviewProvider"
-- "StringLiteralType"
+- !private "StringLiteralType"
 - !private "Text"
+- !private "VStack"
 - "View"
 - !private "drillData"
-- "mp4Data"
 depends-member:
+- !private ["s28CustomDebugStringConvertibleP", "system"]
+- !private ["s17CustomReflectableP", "system"]
+- !private ["Se", "system"]
+- !private ["7SwiftUI4FontV6DesignO", "default"]
 - !private ["9DrillsApp5DrillV", "deinit"]
 - !private ["9DrillsApp11DrillDetailV", "deinit"]
 - !private ["9DrillsApp11DrillDetailV", "init"]
@@ -35,6 +40,7 @@ depends-member:
 - !private ["9DrillsApp13DrillListViewV", "NavigationLink"]
 - !private ["9DrillsApp13DrillListViewV", "NavigationView"]
 - !private ["9DrillsApp13DrillListViewV", "Text"]
+- !private ["9DrillsApp13DrillListViewV", "VStack"]
 - ["9DrillsApp13DrillListViewV", "View"]
 - ["9DrillsApp13DrillListViewV", "_Default_Body"]
 - ["9DrillsApp13DrillListViewV", "_makeView"]
@@ -55,11 +61,23 @@ depends-member:
 - ["9DrillsApp22DrillListView_PreviewsV", "previews"]
 - !private ["9DrillsApp8DrillRowV", "deinit"]
 - !private ["9DrillsApp8DrillRowV", "init"]
+- !private ["SE", "system"]
+- !private ["SQ", "default"]
+- !private ["SQ", "font"]
+- !private ["SQ", "heavy"]
 - !private ["SQ", "init"]
+- !private ["SQ", "system"]
+- !private ["s23ExpressibleByNilLiteralP", "system"]
+- !private ["7SwiftUI4FontV", "system"]
+- !private ["7SwiftUI7GestureP", "system"]
+- !private ["SH", "default"]
+- !private ["SH", "heavy"]
+- !private ["SH", "system"]
 - !private ["7SwiftUI4ListV", "init"]
 - !private ["7SwiftUI4ListV", "navigationBarTitle"]
 - !private ["7SwiftUI14NavigationLinkV", "init"]
 - !private ["7SwiftUI14NavigationViewV", "init"]
+- !private ["Sq", "system"]
 - !private ["7SwiftUI15PreviewProviderP", "DrillListView"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
 - ["7SwiftUI15PreviewProviderP", ""]
@@ -68,7 +86,9 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
+- !private ["7SwiftUI4TextV", "font"]
 - !private ["7SwiftUI4TextV", "init"]
+- !private ["7SwiftUI6VStackV", "init"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "DrillDetail"]
 - !private ["7SwiftUI4ViewP", "DrillRow"]
@@ -76,14 +96,20 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "NavigationLink"]
 - !private ["7SwiftUI4ViewP", "NavigationView"]
 - !private ["7SwiftUI4ViewP", "Text"]
+- !private ["7SwiftUI4ViewP", "VStack"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "body"]
 - !private ["7SwiftUI4ViewP", "drillData"]
+- !private ["7SwiftUI4ViewP", "font"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "navigationBarTitle"]
+- !private ["7SwiftUI4ViewP", "system"]
+- !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
+- !private ["7SwiftUI4FontV6WeightV", "heavy"]
+- !private ["s21_ObjectiveCBridgeableP", "system"]
 - !private ["7SwiftUI16_PreviewProviderP", "DrillListView"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
 - ["7SwiftUI16_PreviewProviderP", ""]
@@ -93,18 +119,32 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "platform"]
 - ["7SwiftUI16_PreviewProviderP", "previews"]
 depends-nominal:
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "Se"
+- !private "7SwiftUI4FontV6DesignO"
 - !private "9DrillsApp5DrillV"
 - !private "9DrillsApp11DrillDetailV"
 - "9DrillsApp13DrillListViewV"
 - "9DrillsApp22DrillListView_PreviewsV"
 - !private "9DrillsApp8DrillRowV"
+- !private "SE"
 - !private "SQ"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "7SwiftUI4FontV"
+- !private "7SwiftUI7GestureP"
+- !private "SH"
 - !private "7SwiftUI4ListV"
 - !private "7SwiftUI14NavigationLinkV"
 - !private "7SwiftUI14NavigationViewV"
+- !private "Sq"
 - "7SwiftUI15PreviewProviderP"
 - !private "7SwiftUI4TextV"
+- !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
+- !private "7SwiftUI11ViewBuilderV"
+- !private "7SwiftUI4FontV6WeightV"
+- !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
 depends-external:
@@ -150,4 +190,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "7d2c3758192908e898d5f615ff77fa5d"
+interface-hash: "5c903b43eeb913004045eed00aec373f"

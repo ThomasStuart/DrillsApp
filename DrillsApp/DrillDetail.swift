@@ -9,13 +9,7 @@
 import SwiftUI
 import AVKit
 
-class StepNumber: ObservableObject {
-    @State var num:Int = 1
-    
-    func increment(){
-        self.num += 1
-    }
-}
+
 
 
 struct DrillDetail: View {
@@ -32,7 +26,7 @@ struct DrillDetail: View {
             //Text(drill.videoURL ?? "no data")
             
              VStack{
-                PlayerContainerView(player: AVPlayer(url: URL(string: mp4Data[0])!), videoTitle: "")
+                PlayerContainerView(player: AVPlayer(url: URL(string: drill.videoURL ?? "")!), videoTitle: "",url: drill.videoURL ?? "")
              }
             .frame(height: UIScreen.main.bounds.height / 3.5)
             
@@ -47,7 +41,10 @@ struct DrillDetail: View {
                 }
             }
             
-            //spacing setting adjust spacing between Stack elements 
+            Spacer()
+                .frame(height: 50)
+            
+            //spacing setting adjust spacing between Stack elements
             VStack(spacing: 20){
                 Text("Steps:")
                     .font(.title)
@@ -59,15 +56,17 @@ struct DrillDetail: View {
         }
     }
     
-    func makeView(text:String) -> StepView {
-        return  StepView(number: 1, text: text)
-    }
-    
 }
 
 struct DrillDetail_Previews: PreviewProvider {
     static var previews: some View {
-        DrillDetail(drill: drillData[1])
+       DrillDetail(drill: drillData[2])
+//        Group{
+//            DrillDetail(drill: drillData[1])
+//            DrillDetail(drill: drillData[2])
+//            DrillDetail(drill: drillData[3])
+//            DrillDetail(drill: drillData[4])
+//        }
     }
 }
 

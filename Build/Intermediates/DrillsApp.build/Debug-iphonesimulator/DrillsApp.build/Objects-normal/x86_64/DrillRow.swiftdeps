@@ -11,6 +11,7 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "/"
+- !private "??"
 - !private "AVPlayer"
 - "Drill"
 - "DrillRow"
@@ -21,12 +22,12 @@ depends-top-level:
 - !private "IntegerLiteralType"
 - !private "PlayerContainerView"
 - "PreviewProvider"
+- !private "StringLiteralType"
 - !private "UIScreen"
 - !private "URL"
 - !private "VStack"
 - "View"
 - !private "drillData"
-- !private "mp4Data"
 depends-member:
 - !private ["So8AVPlayerC", "init"]
 - !private ["7SwiftUI10AnimatableP", "height"]
@@ -55,7 +56,9 @@ depends-member:
 - !private ["Se", "init"]
 - !private ["Se", "subscript"]
 - !private ["Se", "title"]
+- !private ["Se", "videoURL"]
 - !private ["9DrillsApp5DrillV", "title"]
+- !private ["9DrillsApp5DrillV", "videoURL"]
 - !private ["9DrillsApp8DrillRowV", "AVPlayer"]
 - ["9DrillsApp8DrillRowV", "Body"]
 - ["9DrillsApp8DrillRowV", "Drill"]
@@ -72,7 +75,6 @@ depends-member:
 - ["9DrillsApp8DrillRowV", "deinit"]
 - ["9DrillsApp8DrillRowV", "drill"]
 - ["9DrillsApp8DrillRowV", "init"]
-- !private ["9DrillsApp8DrillRowV", "mp4Data"]
 - !private ["9DrillsApp17DrillRow_PreviewsV", "DrillRow"]
 - !private ["9DrillsApp17DrillRow_PreviewsV", "Group"]
 - ["9DrillsApp17DrillRow_PreviewsV", "Previews"]
@@ -102,6 +104,7 @@ depends-member:
 - !private ["SH", "main"]
 - !private ["SH", "subscript"]
 - !private ["s12IdentifiableP", "title"]
+- !private ["s12IdentifiableP", "videoURL"]
 - !private ["SM", "subscript"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - !private ["So8NSObjectC", "bounds"]
@@ -149,7 +152,6 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "drill"]
 - !private ["7SwiftUI4ViewP", "frame"]
 - !private ["7SwiftUI4ViewP", "init"]
-- !private ["7SwiftUI4ViewP", "mp4Data"]
 - !private ["7SwiftUI4ViewP", "previewLayout"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["s14_ArrayProtocolP", "subscript"]
