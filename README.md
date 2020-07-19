@@ -2,7 +2,8 @@
 
 ## Screenshots Of Views
 
-<img src="https://thomasmedia.s3.us-east-2.amazonaws.com/DrillsTableView.png" height="500" width="300">
+<img src="https://thomasmedia.s3.us-east-2.amazonaws.com/DrillsTableView.png" height="800" width="400">
+<img src="https://thomasmedia.s3.us-east-2.amazonaws.com/DrillsDetailView.png" height="800" width="400">
 
 ## Video Walkthrough
 
