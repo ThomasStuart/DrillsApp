@@ -13,6 +13,7 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "-"
 - !private "=="
+- !private ">"
 - !private "??"
 - !private "AVAsset"
 - !private "AVAssetImageGenerator"
@@ -25,6 +26,7 @@ depends-top-level:
 - !private "Image"
 - !private "IntegerLiteralType"
 - "PreviewProvider"
+- !private "ResizeImage"
 - "String"
 - !private "StringLiteralType"
 - "ThumbnailView"
@@ -54,13 +56,13 @@ depends-member:
 - !private ["So6CGRectV", "width"]
 - !private ["So6CGSizeV", "height"]
 - !private ["So6CGSizeV", "init"]
-- !private ["So6CGSizeV", "width"]
 - !private ["s7CVarArgP", "appliesPreferredTrackTransform"]
 - !private ["s7CVarArgP", "bounds"]
 - !private ["s7CVarArgP", "copyCGImage"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "main"]
 - !private ["s7CVarArgP", "maximumSize"]
+- !private ["s7CVarArgP", "mergeWith"]
 - !private ["s7CVarArgP", "size"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["Sl", "subscript"]
@@ -72,6 +74,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "maximumSize"]
+- !private ["s28CustomDebugStringConvertibleP", "mergeWith"]
 - !private ["s28CustomDebugStringConvertibleP", "size"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
@@ -85,6 +88,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "main"]
 - !private ["s23CustomStringConvertibleP", "maximumSize"]
+- !private ["s23CustomStringConvertibleP", "mergeWith"]
 - !private ["s23CustomStringConvertibleP", "size"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
@@ -103,6 +107,7 @@ depends-member:
 - !private ["SQ", "init"]
 - !private ["SQ", "main"]
 - !private ["SQ", "maximumSize"]
+- !private ["SQ", "mergeWith"]
 - !private ["SQ", "size"]
 - !private ["SQ", "subscript"]
 - !private ["SQ", "width"]
@@ -114,17 +119,21 @@ depends-member:
 - !private ["SH", "init"]
 - !private ["SH", "main"]
 - !private ["SH", "maximumSize"]
+- !private ["SH", "mergeWith"]
 - !private ["SH", "size"]
 - !private ["SH", "subscript"]
 - !private ["7SwiftUI5ImageV", "init"]
 - !private ["SM", "subscript"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "mergeWith"]
 - !private ["So8NSCodingP", "size"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "mergeWith"]
 - !private ["So21NSItemProviderReadingP", "size"]
 - !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "mergeWith"]
 - !private ["So21NSItemProviderWritingP", "size"]
 - !private ["So8NSObjectC", "appliesPreferredTrackTransform"]
 - !private ["So8NSObjectC", "bounds"]
@@ -132,6 +141,7 @@ depends-member:
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "main"]
 - !private ["So8NSObjectC", "maximumSize"]
+- !private ["So8NSObjectC", "mergeWith"]
 - !private ["So8NSObjectC", "size"]
 - !private ["So8NSObjectP", "appliesPreferredTrackTransform"]
 - !private ["So8NSObjectP", "bounds"]
@@ -139,8 +149,10 @@ depends-member:
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "main"]
 - !private ["So8NSObjectP", "maximumSize"]
+- !private ["So8NSObjectP", "mergeWith"]
 - !private ["So8NSObjectP", "size"]
 - !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "mergeWith"]
 - !private ["So14NSSecureCodingP", "size"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
 - !private ["7SwiftUI15PreviewProviderP", "ThumbnailView"]
@@ -180,10 +192,13 @@ depends-member:
 - ["9DrillsApp22ThumbnailView_PreviewsV", "platform"]
 - ["9DrillsApp22ThumbnailView_PreviewsV", "previews"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "mergeWith"]
 - !private ["So29UIAccessibilityIdentificationP", "size"]
 - !private ["So7UIImageC", "init"]
+- !private ["So7UIImageC", "mergeWith"]
 - !private ["So7UIImageC", "size"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "mergeWith"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "size"]
 - !private ["So8UIScreenC", "bounds"]
 - !private ["So8UIScreenC", "main"]
@@ -208,6 +223,7 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
+- !private ["s26_ExpressibleByImageLiteralP", "mergeWith"]
 - !private ["s26_ExpressibleByImageLiteralP", "size"]
 - !private ["s19_HasContiguousBytesP", "subscript"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
@@ -217,6 +233,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "maximumSize"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mergeWith"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "size"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "appliesPreferredTrackTransform"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "bounds"]
@@ -224,6 +241,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "maximumSize"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "mergeWith"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "size"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]

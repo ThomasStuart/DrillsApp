@@ -17,22 +17,38 @@ struct ThumbnailView: View {
     }
 }
 
+
+
 func createThumbnailOfVideoFromRemoteUrl(url: String) -> UIImage? {
-    //print( "->", url, "<-")
+ 
+    // Case where there is no video for the Drill
     if url == C.NO_VID_VAL{
+        // return a thumbnail with no video png
         return UIImage(imageLiteralResourceName: "noVideo")
     }
+    
+    
     let asset = AVAsset(url: URL(string: url)!)
     let assetImgGenerate = AVAssetImageGenerator(asset: asset)
     assetImgGenerate.appliesPreferredTrackTransform = true
+    
     //Can set this to improve performance if target size is known before hand
     assetImgGenerate.maximumSize = CGSize(width:UIScreen.main.bounds.width-50,height: C.VID_HEIGHT)
+    
+    // Take a screenshot of the video at C.SECONDS into the video
     let time = CMTimeMakeWithSeconds(C.SECONDS_INTO_VIDEO, preferredTimescale: 600)
+    
+    
     do {
         let img = try assetImgGenerate.copyCGImage(at: time, actualTime: nil)
         let thumbnail = UIImage(cgImage: img)
-        print("width:", thumbnail.size.width )
-        print("height:", thumbnail.size.height)
+        
+        if thumbnail.size.height > 205{
+            var bottomImage = UIImage(imageLiteralResourceName: "backgroundImage")
+            var ri =  ResizeImage(img: thumbnail)
+            return bottomImage.mergeWith(topImage: ri)
+        }
+
         return thumbnail
     } catch {
       print(error.localizedDescription)
