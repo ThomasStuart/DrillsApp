@@ -57,7 +57,10 @@ struct DrillDetail: View {
                     }
                 }
             }
+             .background(color.darkBlue.opacity(0.40))
         }
+        .background(color.darkGreen)
+
     }
     
 }

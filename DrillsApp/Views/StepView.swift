@@ -16,23 +16,22 @@ struct StepView: View {
         
         HStack{
             Text( String(number) )
+                .foregroundColor(.white)
                 .font(.title)
                 .frame(alignment: .leading)
                 .padding()
                 .overlay(
                     RoundedRectangle(cornerRadius: 16)
-                        .stroke(color.lightGreen, lineWidth: 2) )
+                        .stroke(color.darkRed, lineWidth: 2) )
                 
             Spacer()
                 .frame(width:20)
             Text(text)
-
+                 .foregroundColor(.white)
             Spacer()
             
         }   .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 5))
-            .overlay(
-                RoundedRectangle(cornerRadius: 16)
-                    .stroke(color.lightGreen, lineWidth: 2) )
+            .overlay(RoundedRectangle(cornerRadius: 16).stroke(color.darkRed.opacity(0.95), lineWidth: 2)).background(RoundedRectangle(cornerRadius: 16).fill(color.darkGreen.opacity(0.95)))
     
     }
 }

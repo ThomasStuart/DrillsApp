@@ -12,18 +12,24 @@ import AVKit
 struct PlayerControlsView : View {
   @State var playerPaused = true
   let player: AVPlayer
-  var body: some View {
-    Button(action: {
-      self.playerPaused.toggle()
-      if self.playerPaused {
-        self.player.pause()
-      }
-      else {
-        self.player.play()
-      }
-    }) {
-      Image(systemName: playerPaused ? "play" : "pause")
-    }
-    
+  
+    var body: some View {
+        Button(action: {
+            self.playerPaused.toggle()
+            if self.playerPaused {
+                self.player.pause()
+            }
+            else {
+                self.player.play()
+            }
+        }) {
+            Image(systemName: playerPaused ? "play" : "pause")
+           }
   }
+}
+
+struct PlayerControlsView_Previews: PreviewProvider {
+    static var previews: some View {
+        Text("Hello, World!")
+    }
 }

@@ -92,7 +92,6 @@
 			children = (
 				967B9B2524C3F54E00876A71 /* VideoViews */,
 				96CC3A6A24C2D72C009A4796 /* VideoPlayer.swift */,
-				967B9B2324C3F1F400876A71 /* TitleOverlay.swift */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -100,6 +99,8 @@
 		967A75E724C59202000001D5 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				967B9B2124C3F07200876A71 /* ThumbnailView.swift */,
+				967A75E424C589A3000001D5 /* ResizeImage.swift */,
 				967A75E824C59227000001D5 /* MergeImage.swift */,
 			);
 			path = Image;
@@ -110,8 +111,7 @@
 			children = (
 				96CC3A6C24C2E07D009A4796 /* PlayerContainerView.swift */,
 				96CC3A6F24C2E241009A4796 /* PlayerControlsView.swift */,
-				967B9B2124C3F07200876A71 /* ThumbnailView.swift */,
-				967A75E424C589A3000001D5 /* ResizeImage.swift */,
+				967B9B2324C3F1F400876A71 /* TitleOverlay.swift */,
 			);
 			path = VideoViews;
 			sourceTree = "<group>";
