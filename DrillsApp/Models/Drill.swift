@@ -15,7 +15,7 @@ struct Drill: Decodable, Identifiable {
     var targets: [target]
     var benefits: [benefit]
     var steps: [step]
-    var videoURL: String?
+    var videoURL: String? = ""
 }
 
 

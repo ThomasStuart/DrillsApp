@@ -48,7 +48,7 @@ func load<T: Decodable>(_ filename: String) -> T {
 func reoloadWithStepCount(dd: [Drill]) -> [Drill]{
     var r = dd //r stands for the return array
     for i in r.indices{
-        r[i].videoURL = mySampleMovieLinkData[i]  // TODO:: REMOVE THIS LINE ONCE PERMISSION IS GRANTED TO ACCESS LINKS
+        //r[i].videoURL = mySampleMovieLinkData[i]  // TODO:: REMOVE THIS LINE ONCE PERMISSION IS GRANTED TO ACCESS LINKS
         for j in dd[i].steps.indices{
             r[i].steps[j].num = j+1
         }

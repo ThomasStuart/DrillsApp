@@ -10,7 +10,6 @@ provides-member:
 - ["9DrillsApp17StepView_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Color"
 - !private "EdgeInsets"
 - "FloatLiteralType"
 - !private "Group"
@@ -26,6 +25,7 @@ depends-top-level:
 - !private "StringLiteralType"
 - !private "Text"
 - "View"
+- !private "color"
 depends-member:
 - !private ["7SwiftUI9AlignmentV", "leading"]
 - !private ["7SwiftUI10AnimatableP", "init"]
@@ -33,13 +33,11 @@ depends-member:
 - !private ["SK", "init"]
 - !private ["s7CVarArgP", "init"]
 - !private ["Sl", "init"]
-- !private ["7SwiftUI5ColorV", "green"]
 - !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "title"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "title"]
-- !private ["s23CustomStringConvertibleP", "green"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["Se", "init"]
 - !private ["Se", "title"]
@@ -48,7 +46,6 @@ depends-member:
 - !private ["SE", "title"]
 - !private ["SQ", "font"]
 - !private ["SQ", "frame"]
-- !private ["SQ", "green"]
 - !private ["SQ", "init"]
 - !private ["SQ", "leading"]
 - !private ["SQ", "title"]
@@ -62,7 +59,6 @@ depends-member:
 - !private ["7SwiftUI5GroupV", "init"]
 - !private ["7SwiftUI6HStackV", "init"]
 - !private ["7SwiftUI6HStackV", "padding"]
-- !private ["SH", "green"]
 - !private ["SH", "init"]
 - !private ["SH", "title"]
 - !private ["7SwiftUI15InsettableShapeP", "init"]
@@ -85,11 +81,9 @@ depends-member:
 - !private ["ST", "init"]
 - !private ["7SwiftUI5ShapeP", "init"]
 - !private ["7SwiftUI5ShapeP", "stroke"]
-- !private ["7SwiftUI10ShapeStyleP", "green"]
 - !private ["7SwiftUI6SpacerV", "frame"]
 - !private ["7SwiftUI6SpacerV", "init"]
 - ["9DrillsApp8StepViewV", "Body"]
-- !private ["9DrillsApp8StepViewV", "Color"]
 - !private ["9DrillsApp8StepViewV", "EdgeInsets"]
 - !private ["9DrillsApp8StepViewV", "HStack"]
 - ["9DrillsApp8StepViewV", "Int"]
@@ -102,6 +96,7 @@ depends-member:
 - ["9DrillsApp8StepViewV", "_makeView"]
 - ["9DrillsApp8StepViewV", "_makeViewList"]
 - ["9DrillsApp8StepViewV", "body"]
+- !private ["9DrillsApp8StepViewV", "color"]
 - ["9DrillsApp8StepViewV", "deinit"]
 - ["9DrillsApp8StepViewV", "init"]
 - ["9DrillsApp8StepViewV", "number"]
@@ -125,7 +120,6 @@ depends-member:
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - ["7SwiftUI4ViewP", "Body"]
-- !private ["7SwiftUI4ViewP", "Color"]
 - !private ["7SwiftUI4ViewP", "EdgeInsets"]
 - !private ["7SwiftUI4ViewP", "HStack"]
 - !private ["7SwiftUI4ViewP", "RoundedRectangle"]
@@ -137,9 +131,9 @@ depends-member:
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "color"]
 - !private ["7SwiftUI4ViewP", "font"]
 - !private ["7SwiftUI4ViewP", "frame"]
-- !private ["7SwiftUI4ViewP", "green"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "number"]
 - !private ["7SwiftUI4ViewP", "overlay"]
@@ -165,13 +159,13 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "platform"]
 - ["7SwiftUI16_PreviewProviderP", "previews"]
 - !private ["7SwiftUI11_VectorMathP", "init"]
+- !private ["9DrillsApp5colorO", "lightGreen"]
 depends-nominal:
 - !private "7SwiftUI9AlignmentV"
 - !private "7SwiftUI10AnimatableP"
 - !private "SK"
 - !private "s7CVarArgP"
 - !private "Sl"
-- !private "7SwiftUI5ColorV"
 - !private "SL"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
@@ -199,7 +193,6 @@ depends-nominal:
 - !private "7SwiftUI16RoundedRectangleV"
 - !private "ST"
 - !private "7SwiftUI5ShapeP"
-- !private "7SwiftUI10ShapeStyleP"
 - !private "7SwiftUI6SpacerV"
 - "9DrillsApp8StepViewV"
 - "9DrillsApp17StepView_PreviewsV"
@@ -218,6 +211,7 @@ depends-nominal:
 - !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
 - !private "7SwiftUI11_VectorMathP"
+- !private "9DrillsApp5colorO"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"

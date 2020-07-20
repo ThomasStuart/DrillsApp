@@ -18,6 +18,10 @@ struct ThumbnailView: View {
 }
 
 func createThumbnailOfVideoFromRemoteUrl(url: String) -> UIImage? {
+    print( "->", url, "<-")
+    if url == C.NO_VID_VAL{
+        return UIImage(imageLiteralResourceName: "noVideo")
+    }
     let asset = AVAsset(url: URL(string: url)!)
     let assetImgGenerate = AVAssetImageGenerator(asset: asset)
     assetImgGenerate.appliesPreferredTrackTransform = true

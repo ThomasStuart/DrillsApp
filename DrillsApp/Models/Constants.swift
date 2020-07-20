@@ -17,5 +17,6 @@ enum color{
 struct C {
     static let VID_WIDTH          = UIScreen.main.bounds.width
     static let VID_HEIGHT         = UIScreen.main.bounds.height / 3.5
-    static let SECONDS_INTO_VIDEO = 4.0
+    static let SECONDS_INTO_VIDEO = 1.0
+    static let NO_VID_VAL         = ""
 }

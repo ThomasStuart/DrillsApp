@@ -24,7 +24,12 @@ struct DrillDetail: View {
                     .font(.title)
                             
                  VStack{
-                    PlayerContainerView(player: AVPlayer(url: URL(string: drill.videoURL ?? "")!), videoTitle: "",url: drill.videoURL ?? "")
+                    if drill.videoURL == nil{
+                        Image(uiImage: createThumbnailOfVideoFromRemoteUrl(url: drill.videoURL ?? "") ?? UIImage(imageLiteralResourceName: "noVideo") )
+                    }
+                    else{
+                     PlayerContainerView(player: AVPlayer(url: URL(string: drill.videoURL ?? "")!), videoTitle: "",url: drill.videoURL ?? "")
+                   }
                  }
                  .frame(height: C.VID_HEIGHT)
                 

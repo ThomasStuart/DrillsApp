@@ -15,8 +15,8 @@ struct DrillRow: View {
     var body: some View {
         HStack{
              VStack{
-                ThumbnailView(url: drill.videoURL ?? "")
-                    .overlay(TitleOverlay(text: drill.title ?? ""), alignment: .bottomLeading)
+                ThumbnailView(url: drill.videoURL ?? C.NO_VID_VAL)
+                    .overlay(TitleOverlay(text: drill.title ?? C.NO_VID_VAL), alignment: .bottomLeading)
                Image(systemName: "play")
              }
              .frame(height: C.VID_HEIGHT)
