@@ -13,10 +13,11 @@ struct DrillRow: View {
     var drill: Drill
     
     var body: some View {
-        ThumbnailView(url: drill.videoURL ?? C.NO_VID_VAL)
-            .overlay(TitleOverlay(text: drill.title ), alignment: .bottomLeading)
-            .overlay( (Image(systemName: "play").resizable().frame(width: 32.0, height: 32.0)).foregroundColor(.white))
-         .frame(height: C.VID_HEIGHT)
+        Image("noVideo")
+//        ThumbnailView(url: drill.videoURL ?? C.NO_VID_VAL)
+//            .overlay(TitleOverlay(text: drill.title ), alignment: .bottomLeading)
+//            .overlay( (Image(systemName: "play").resizable().frame(width: 32.0, height: 32.0)).foregroundColor(.white))
+//         .frame(height: C.VID_HEIGHT)
     }
 }
 

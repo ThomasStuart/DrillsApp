@@ -15,7 +15,9 @@ import AVKit
 struct DrillListView: View {
     
         var body: some View {
+        
             VStack{
+        
                 Text("Golf AI")
                    .font(.system(size: 30, weight: .heavy, design: .default))
         

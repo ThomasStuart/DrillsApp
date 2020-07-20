@@ -18,7 +18,7 @@ struct DrillDetail: View {
     var body: some View {
               
         List{
-            
+    
              VStack {
 
                 Text(drill.title)
@@ -30,7 +30,6 @@ struct DrillDetail: View {
                     }
                     else{
                         VideoPlayerContainerView(url: URL(string: drill.videoURL ?? "")! )
-                        //PlayerContainerView(player: AVPlayer(url: URL(string: drill.videoURL ?? "")!), videoTitle: "",url: drill.videoURL ?? "")
                    }
                  }
                  .frame(height: C.VID_HEIGHT)
@@ -50,16 +49,20 @@ struct DrillDetail: View {
                     .frame(height: 50)
                 
                 //spacing setting adjust spacing between Stack elements
-                VStack(spacing: 20){
+                VStack(spacing: 0){
                     Text("Steps:")
                         .font(.title)
+                        .foregroundColor(.white)
 
                     ForEach(drill.steps, id: \.id){ s in
                         StepView(number: s.num, text: s.name ?? "")
                     }
-                }.frame()
+
+                    
+                }.overlay(RoundedRectangle(cornerRadius: 16).stroke(color.darkGreen, lineWidth: 2)).background(RoundedRectangle(cornerRadius: 16).fill( color.darkGreen ))
+                
             }
-             .background(color.darkBlue.opacity(0.40))
+             .listRowBackground(color.darkBlue.opacity(0.40)).edgesIgnoringSafeArea(.all)
         }
     }
     

@@ -1,0 +1,266 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Utility"
+provides-nominal:
+- "9DrillsApp7UtilityC"
+provides-member:
+- ["9DrillsApp7UtilityC", ""]
+provides-dynamic-lookup:
+- "formatSecondsToHMS"
+- "timeHMSFormatter"
+depends-top-level:
+- !private "!"
+- "AssignmentPrecedence"
+- "DateComponentsFormatter"
+- "Double"
+- "NSObject"
+- "String"
+- !private "StringLiteralType"
+- "Utility"
+depends-member:
+- !private ["s18AdditiveArithmeticP", "isNaN"]
+- !private ["SB", "isNaN"]
+- ["s7CVarArgP", "DateComponentsFormatter"]
+- ["s7CVarArgP", ""]
+- ["s7CVarArgP", "allowedUnits"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isNaN"]
+- !private ["s7CVarArgP", "string"]
+- !private ["s7CVarArgP", "timeHMSFormatter"]
+- ["s7CVarArgP", "unitsStyle"]
+- ["s7CVarArgP", "zeroFormattingBehavior"]
+- !private ["SL", "isNaN"]
+- ["s28CustomDebugStringConvertibleP", "DateComponentsFormatter"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "allowedUnits"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isNaN"]
+- !private ["s28CustomDebugStringConvertibleP", "string"]
+- !private ["s28CustomDebugStringConvertibleP", "timeHMSFormatter"]
+- ["s28CustomDebugStringConvertibleP", "unitsStyle"]
+- ["s28CustomDebugStringConvertibleP", "zeroFormattingBehavior"]
+- !private ["s17CustomReflectableP", "isNaN"]
+- ["s23CustomStringConvertibleP", "DateComponentsFormatter"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "allowedUnits"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isNaN"]
+- !private ["s23CustomStringConvertibleP", "string"]
+- !private ["s23CustomStringConvertibleP", "timeHMSFormatter"]
+- ["s23CustomStringConvertibleP", "unitsStyle"]
+- ["s23CustomStringConvertibleP", "zeroFormattingBehavior"]
+- ["So25NSDateComponentsFormatterC", "allowedUnits"]
+- ["So25NSDateComponentsFormatterC", "init"]
+- !private ["So25NSDateComponentsFormatterC", "string"]
+- ["So25NSDateComponentsFormatterC", "unitsStyle"]
+- ["So25NSDateComponentsFormatterC", "zeroFormattingBehavior"]
+- !private ["Se", "isNaN"]
+- !private ["Sd", "isNaN"]
+- !private ["SE", "isNaN"]
+- ["SQ", "DateComponentsFormatter"]
+- ["SQ", ""]
+- ["SQ", "allowedUnits"]
+- ["SQ", "init"]
+- !private ["SQ", "isNaN"]
+- ["SQ", "minute"]
+- ["SQ", "pad"]
+- ["SQ", "positional"]
+- ["SQ", "second"]
+- !private ["SQ", "string"]
+- !private ["SQ", "timeHMSFormatter"]
+- ["SQ", "unitsStyle"]
+- ["SQ", "zeroFormattingBehavior"]
+- ["s25ExpressibleByArrayLiteralP", "minute"]
+- ["s25ExpressibleByArrayLiteralP", "pad"]
+- ["s25ExpressibleByArrayLiteralP", "second"]
+- !private ["s25ExpressibleByFloatLiteralP", "isNaN"]
+- !private ["s27ExpressibleByIntegerLiteralP", "isNaN"]
+- !private ["SF", "isNaN"]
+- ["So11NSFormatterC", "allowedUnits"]
+- ["So11NSFormatterC", "init"]
+- !private ["So11NSFormatterC", "string"]
+- ["So11NSFormatterC", "unitsStyle"]
+- ["So11NSFormatterC", "zeroFormattingBehavior"]
+- ["SH", "DateComponentsFormatter"]
+- ["SH", ""]
+- ["SH", "allowedUnits"]
+- ["SH", "init"]
+- !private ["SH", "isNaN"]
+- ["SH", "positional"]
+- !private ["SH", "string"]
+- !private ["SH", "timeHMSFormatter"]
+- ["SH", "unitsStyle"]
+- ["SH", "zeroFormattingBehavior"]
+- !private ["s25LosslessStringConvertibleP", "isNaN"]
+- ["So8NSCodingP", "allowedUnits"]
+- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "string"]
+- ["So8NSCodingP", "unitsStyle"]
+- ["So8NSCodingP", "zeroFormattingBehavior"]
+- ["So9NSCopyingP", "allowedUnits"]
+- ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "string"]
+- ["So9NSCopyingP", "unitsStyle"]
+- ["So9NSCopyingP", "zeroFormattingBehavior"]
+- ["So8NSObjectC", "DateComponentsFormatter"]
+- ["So8NSObjectC", "Double"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", ""]
+- ["So8NSObjectC", "allowedUnits"]
+- ["So8NSObjectC", "formatSecondsToHMS"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "string"]
+- ["So8NSObjectC", "timeHMSFormatter"]
+- ["So8NSObjectC", "unitsStyle"]
+- ["So8NSObjectC", "zeroFormattingBehavior"]
+- ["So8NSObjectP", "DateComponentsFormatter"]
+- ["So8NSObjectP", ""]
+- ["So8NSObjectP", "allowedUnits"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "string"]
+- !private ["So8NSObjectP", "timeHMSFormatter"]
+- ["So8NSObjectP", "unitsStyle"]
+- ["So8NSObjectP", "zeroFormattingBehavior"]
+- !private ["Sj", "isNaN"]
+- ["s9OptionSetP", "minute"]
+- ["s9OptionSetP", "pad"]
+- ["s9OptionSetP", "second"]
+- ["SY", "minute"]
+- ["SY", "pad"]
+- ["SY", "positional"]
+- ["SY", "second"]
+- !private ["s10SIMDScalarP", "isNaN"]
+- ["s10SetAlgebraP", "minute"]
+- ["s10SetAlgebraP", "pad"]
+- ["s10SetAlgebraP", "second"]
+- !private ["s13SignedNumericP", "isNaN"]
+- !private ["Sx", "isNaN"]
+- !private ["s20TextOutputStreamableP", "isNaN"]
+- ["So14NSCalendarUnitV", "minute"]
+- ["So14NSCalendarUnitV", "second"]
+- ["So35NSDateComponentsFormatterUnitsStyleV", "positional"]
+- ["9DrillsApp7UtilityC", "DateComponentsFormatter"]
+- ["9DrillsApp7UtilityC", "Double"]
+- ["9DrillsApp7UtilityC", "String"]
+- ["9DrillsApp7UtilityC", "deinit"]
+- ["9DrillsApp7UtilityC", "formatSecondsToHMS"]
+- ["9DrillsApp7UtilityC", "init"]
+- !private ["9DrillsApp7UtilityC", "timeHMSFormatter"]
+- !private ["7SwiftUI16VectorArithmeticP", "isNaN"]
+- ["So47NSDateComponentsFormatterZeroFormattingBehaviorV", "pad"]
+- !private ["s15_CVarArgAlignedP", "isNaN"]
+- !private ["s22_CVarArgPassedAsDoubleP", "isNaN"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "isNaN"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "isNaN"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "isNaN"]
+- !private ["7SwiftUI18_FormatSpecifiableP", "isNaN"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "isNaN"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "DateComponentsFormatter"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- ["10Foundation27_KeyValueCodingAndObservingP", "allowedUnits"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "string"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "timeHMSFormatter"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "unitsStyle"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "zeroFormattingBehavior"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "DateComponentsFormatter"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "allowedUnits"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "string"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "timeHMSFormatter"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "unitsStyle"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "zeroFormattingBehavior"]
+- !private ["s21_ObjectiveCBridgeableP", "isNaN"]
+depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "SB"
+- "s7CVarArgP"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "So25NSDateComponentsFormatterC"
+- !private "Se"
+- !private "Sd"
+- !private "SE"
+- "SQ"
+- "s25ExpressibleByArrayLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "SF"
+- "So11NSFormatterC"
+- "SH"
+- !private "s25LosslessStringConvertibleP"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "Sj"
+- "s9OptionSetP"
+- "SY"
+- !private "s10SIMDScalarP"
+- "s10SetAlgebraP"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "s20TextOutputStreamableP"
+- "So14NSCalendarUnitV"
+- "So35NSDateComponentsFormatterUnitsStyleV"
+- "9DrillsApp7UtilityC"
+- !private "7SwiftUI16VectorArithmeticP"
+- "So47NSDateComponentsFormatterZeroFormattingBehaviorV"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "7SwiftUI18_FormatSpecifiableP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreMIDI.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreMedia.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreData.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/simd.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/AVFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreAudio.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AVKit.framework/Headers/AVKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "cd3439b176b6b7288cb972a651903d7b"
