@@ -186,6 +186,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreGraphics;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -235,6 +237,21 @@ SWIFT_CLASS("_TtC9DrillsApp13SceneDelegate")
 
 
 
+
+
+SWIFT_CLASS("_TtC9DrillsApp7Utility")
+@interface Utility : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSCoder;
+
+SWIFT_CLASS("_TtC9DrillsApp17VideoPlayerUIView")
+@interface VideoPlayerUIView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

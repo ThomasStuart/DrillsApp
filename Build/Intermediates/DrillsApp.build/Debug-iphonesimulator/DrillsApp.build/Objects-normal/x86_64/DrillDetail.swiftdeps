@@ -12,7 +12,6 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "=="
 - !private "??"
-- !private "AVPlayer"
 - !private "C"
 - "Drill"
 - "DrillDetail"
@@ -22,7 +21,6 @@ depends-top-level:
 - !private "Image"
 - !private "IntegerLiteralType"
 - !private "List"
-- !private "PlayerContainerView"
 - "PreviewProvider"
 - !private "Spacer"
 - !private "StepView"
@@ -31,12 +29,12 @@ depends-top-level:
 - !private "UIImage"
 - !private "URL"
 - !private "VStack"
+- !private "VideoPlayerContainerView"
 - "View"
 - !private "color"
 - !private "createThumbnailOfVideoFromRemoteUrl"
 - !private "drillData"
 depends-member:
-- !private ["So8AVPlayerC", "init"]
 - !private ["Sa", "subscript"]
 - !private ["SK", "subscript"]
 - !private ["9DrillsApp1CV", "VID_HEIGHT"]
@@ -70,20 +68,19 @@ depends-member:
 - !private ["9DrillsApp5DrillV", "steps"]
 - !private ["9DrillsApp5DrillV", "title"]
 - !private ["9DrillsApp5DrillV", "videoURL"]
-- !private ["9DrillsApp11DrillDetailV", "AVPlayer"]
 - ["9DrillsApp11DrillDetailV", "Body"]
 - !private ["9DrillsApp11DrillDetailV", "C"]
 - ["9DrillsApp11DrillDetailV", "Drill"]
 - !private ["9DrillsApp11DrillDetailV", "ForEach"]
 - !private ["9DrillsApp11DrillDetailV", "Image"]
 - !private ["9DrillsApp11DrillDetailV", "List"]
-- !private ["9DrillsApp11DrillDetailV", "PlayerContainerView"]
 - !private ["9DrillsApp11DrillDetailV", "Spacer"]
 - !private ["9DrillsApp11DrillDetailV", "StepView"]
 - !private ["9DrillsApp11DrillDetailV", "Text"]
 - !private ["9DrillsApp11DrillDetailV", "UIImage"]
 - !private ["9DrillsApp11DrillDetailV", "URL"]
 - !private ["9DrillsApp11DrillDetailV", "VStack"]
+- !private ["9DrillsApp11DrillDetailV", "VideoPlayerContainerView"]
 - ["9DrillsApp11DrillDetailV", "View"]
 - ["9DrillsApp11DrillDetailV", "_Default_Body"]
 - ["9DrillsApp11DrillDetailV", "_makeView"]
@@ -146,8 +143,6 @@ depends-member:
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["Sq", "subheadline"]
 - !private ["Sq", "title"]
-- !private ["9DrillsApp19PlayerContainerViewV", "deinit"]
-- !private ["9DrillsApp19PlayerContainerViewV", "init"]
 - !private ["7SwiftUI15PreviewProviderP", "DrillDetail"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
 - ["7SwiftUI15PreviewProviderP", ""]
@@ -175,19 +170,20 @@ depends-member:
 - !private ["7SwiftUI6VStackV", "background"]
 - !private ["7SwiftUI6VStackV", "frame"]
 - !private ["7SwiftUI6VStackV", "init"]
-- !private ["7SwiftUI4ViewP", "AVPlayer"]
+- !private ["9DrillsApp24VideoPlayerContainerViewV", "deinit"]
+- !private ["9DrillsApp24VideoPlayerContainerViewV", "init"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "C"]
 - !private ["7SwiftUI4ViewP", "ForEach"]
 - !private ["7SwiftUI4ViewP", "Image"]
 - !private ["7SwiftUI4ViewP", "List"]
-- !private ["7SwiftUI4ViewP", "PlayerContainerView"]
 - !private ["7SwiftUI4ViewP", "Spacer"]
 - !private ["7SwiftUI4ViewP", "StepView"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "UIImage"]
 - !private ["7SwiftUI4ViewP", "URL"]
 - !private ["7SwiftUI4ViewP", "VStack"]
+- !private ["7SwiftUI4ViewP", "VideoPlayerContainerView"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
 - ["7SwiftUI4ViewP", "_makeView"]
@@ -235,7 +231,6 @@ depends-member:
 - !private ["9DrillsApp4stepV", "name"]
 - !private ["9DrillsApp4stepV", "num"]
 depends-nominal:
-- !private "So8AVPlayerC"
 - !private "Sa"
 - !private "SK"
 - !private "9DrillsApp1CV"
@@ -272,7 +267,6 @@ depends-nominal:
 - !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "Sq"
-- !private "9DrillsApp19PlayerContainerViewV"
 - "7SwiftUI15PreviewProviderP"
 - !private "Sk"
 - !private "Sm"
@@ -287,6 +281,7 @@ depends-nominal:
 - !private "So39UIItemProviderPresentationSizeProvidingP"
 - !private "10Foundation3URLV"
 - !private "7SwiftUI6VStackV"
+- !private "9DrillsApp24VideoPlayerContainerViewV"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
 - !private "s14_ArrayProtocolP"

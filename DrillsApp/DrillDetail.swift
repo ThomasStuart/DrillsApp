@@ -28,7 +28,8 @@ struct DrillDetail: View {
                         Image(uiImage: createThumbnailOfVideoFromRemoteUrl(url: drill.videoURL ?? "") ?? UIImage(imageLiteralResourceName: "noVideo") )
                     }
                     else{
-                     PlayerContainerView(player: AVPlayer(url: URL(string: drill.videoURL ?? "")!), videoTitle: "",url: drill.videoURL ?? "")
+                        VideoPlayerContainerView(url: URL(string: drill.videoURL ?? "")! )
+                        //PlayerContainerView(player: AVPlayer(url: URL(string: drill.videoURL ?? "")!), videoTitle: "",url: drill.videoURL ?? "")
                    }
                  }
                  .frame(height: C.VID_HEIGHT)
