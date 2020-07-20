@@ -32,8 +32,9 @@ class VideoPlayerUIView: UIView {
         self.seeking = seeking
         
         super.init(frame: .zero)
-    
-        backgroundColor = .lightGray
+  
+        backgroundColor = .black // .lightGray
+        
         playerLayer.player = player
         layer.addSublayer(playerLayer)
         

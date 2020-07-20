@@ -16,10 +16,11 @@ struct DrillDetail: View {
     var drill: Drill
     
     var body: some View {
-        
+              
         List{
+            
              VStack {
-                
+
                 Text(drill.title)
                     .font(.title)
                             
@@ -56,12 +57,10 @@ struct DrillDetail: View {
                     ForEach(drill.steps, id: \.id){ s in
                         StepView(number: s.num, text: s.name ?? "")
                     }
-                }
+                }.frame()
             }
              .background(color.darkBlue.opacity(0.40))
         }
-        .background(color.darkGreen)
-
     }
     
 }

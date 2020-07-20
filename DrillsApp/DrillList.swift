@@ -18,7 +18,7 @@ struct DrillListView: View {
             VStack{
                 Text("Golf AI")
                    .font(.system(size: 30, weight: .heavy, design: .default))
-                
+        
                     NavigationView {
                         List(drillData) { drill in
                             NavigationLink(destination: DrillDetail(drill: drill)) {
@@ -26,9 +26,8 @@ struct DrillListView: View {
                             }
                         }
                         .navigationBarTitle(Text("Drills: "))
-                        
                     }
-            }
+            }.background(color.darkBlue)
         }
   }
 

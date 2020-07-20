@@ -22,7 +22,7 @@ struct StepView: View {
                 .padding()
                 .overlay(
                     RoundedRectangle(cornerRadius: 16)
-                        .stroke(color.darkRed, lineWidth: 2) )
+                        .stroke(Color.black, lineWidth: 2) )
                 
             Spacer()
                 .frame(width:20)
@@ -31,7 +31,8 @@ struct StepView: View {
             Spacer()
             
         }   .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 5))
-            .overlay(RoundedRectangle(cornerRadius: 16).stroke(color.darkRed.opacity(0.95), lineWidth: 2)).background(RoundedRectangle(cornerRadius: 16).fill(color.darkGreen.opacity(0.95)))
+            //color.darkRed.opacity(0.95)
+            .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.black, lineWidth: 2)).background(RoundedRectangle(cornerRadius: 16).fill( Color(UIColor.lightGray) ))
     
     }
 }

@@ -1,6 +1,5 @@
 /Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Video/Utility.swift
-/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Video/VideoPlayer.swift
-/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Video/VideoViews/TitleOverlay.swift
+/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Image/TitleOverlay.swift
 /Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/AppSetup/AppDelegate.swift
 /Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/AppSetup/SceneDelegate.swift
 /Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Image/MergeImage.swift
@@ -11,10 +10,8 @@
 /Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Views/StepView.swift
 /Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Models/Constants.swift
 /Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Video/VideoView.swift
-/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Video/VideoViews/PlayerControlsView.swift
 /Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Models/Data.swift
 /Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Image/ResizeImage.swift
 /Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Models/Drill.swift
 /Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Image/ThumbnailView.swift
-/Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Video/VideoViews/PlayerContainerView.swift
 /Users/Thomas_Stuart/Desktop/XcodeProjects/DrillsApp/DrillsApp/Resources/SampleURLs.swift
