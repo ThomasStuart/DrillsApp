@@ -18,7 +18,7 @@ struct ThumbnailView: View {
 }
 
 func createThumbnailOfVideoFromRemoteUrl(url: String) -> UIImage? {
-    print( "->", url, "<-")
+    //print( "->", url, "<-")
     if url == C.NO_VID_VAL{
         return UIImage(imageLiteralResourceName: "noVideo")
     }
@@ -31,6 +31,8 @@ func createThumbnailOfVideoFromRemoteUrl(url: String) -> UIImage? {
     do {
         let img = try assetImgGenerate.copyCGImage(at: time, actualTime: nil)
         let thumbnail = UIImage(cgImage: img)
+        print("width:", thumbnail.size.width )
+        print("height:", thumbnail.size.height)
         return thumbnail
     } catch {
       print(error.localizedDescription)
