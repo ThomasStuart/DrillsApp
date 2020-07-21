@@ -9,7 +9,9 @@
 import UIKit
 
 
-
+/*
+    MergeImage is important for creating the Thumbnail image.  For vertically shot videos, a black background needs to be made. This merges the two photos together.
+ */
 extension UIImage {
   func mergeWith(topImage: UIImage) -> UIImage {
     let bottomImage = self

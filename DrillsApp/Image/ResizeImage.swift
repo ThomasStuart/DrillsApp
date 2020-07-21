@@ -7,6 +7,11 @@
 //
 import UIKit
 
+/*
+   These functions help resize photos without making them look all distorted.
+ */
+
+
 func ResizeImage(img: UIImage, tw:Int, th:Int ) -> UIImage {
     let image = img
     let targetSize = CGSize(width: tw, height: th)
