@@ -9,7 +9,7 @@
 
 Here's a walkthrough of implemented user stories: <br>
 <img src='http://g.recordit.co/DhnxlCZtFg.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-direct link to gif: http://g.recordit.co/DhnxlCZtFg.gif <br>
+<br> direct link to gif: http://g.recordit.co/DhnxlCZtFg.gif </br>
 
 
 OLD VIDEO
@@ -18,3 +18,4 @@ old video linkd link to gif: http://g.recordit.co/btiypmLM2P.gif
 
 ## NOTE:
 File not included in Repo: "Drills.json"  (will need to add file in order to compile)
+PLEASE READ NOTE IN "DrillRow.swift" if canvas is not working
