@@ -13,8 +13,10 @@ Here's a walkthrough of implemented user stories: <br>
 
 <br>OLD VIDEO</br>
 <img src='http://g.recordit.co/btiypmLM2P.gif' title='OLD Video Walkthrough' width='' alt='Video Walkthrough' />
-old video linkd link to gif: http://g.recordit.co/btiypmLM2P.gif
+<br>old video linkd link to gif: http://g.recordit.co/btiypmLM2P.gif </br>
 
 ## NOTE:
 File not included in Repo: "Drills.json"  (will need to add file in order to compile)
-PLEASE READ NOTE IN "DrillRow.swift" if canvas is not working
+<br>
+**PLEASE READ NOTE IN "DrillRow.swift" if canvas is not working (canvas is Viewer in swiftui). Basically, comment out thumbnail code and insert noVideo image. **
+</br>
