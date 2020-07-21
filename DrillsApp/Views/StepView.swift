@@ -8,6 +8,8 @@
 
 import SwiftUI
 
+
+//  StepView is responsible for making a individual step with a number and text.
 struct StepView: View {
     var number: Int
     var text  : String
@@ -20,10 +22,7 @@ struct StepView: View {
                 .font(.title)
                 .frame(alignment: .leading)
                 .padding()
-//                .overlay(
-//                    RoundedRectangle(cornerRadius: 16)
-//                        .stroke(Color.black, lineWidth: 2) )
-            
+
             Divider().frame(width: 1,height: 2).padding(.vertical, 15).background(Color.white)
                 
             Spacer()
@@ -35,9 +34,7 @@ struct StepView: View {
             
 
         }   .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 5))
-            //color.darkRed.opacity(0.95)
-            //Color(UIColor.lightGray)
-            .overlay(RoundedRectangle(cornerRadius: 16).stroke(color.darkGreen, lineWidth: 2)).background(RoundedRectangle(cornerRadius: 16).fill( color.darkGreen ))
+            .overlay(RoundedRectangle(cornerRadius: 16).stroke(color.darkGray, lineWidth: 2)).background(RoundedRectangle(cornerRadius: 16).fill( color.darkGray ))
             .overlay(Divider().frame(width: 275,height: 2.5).padding(.horizontal, 30).background(Color.white), alignment: .bottom)
         
 

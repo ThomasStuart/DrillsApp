@@ -7,9 +7,9 @@
 //
 import UIKit
 
-func ResizeImage(img: UIImage ) -> UIImage {
+func ResizeImage(img: UIImage, tw:Int, th:Int ) -> UIImage {
     let image = img
-    let targetSize = CGSize(width: 364, height: 204)
+    let targetSize = CGSize(width: tw, height: th)
 
     let scaledImage = image.scalePreservingAspectRatio(
         targetSize: targetSize

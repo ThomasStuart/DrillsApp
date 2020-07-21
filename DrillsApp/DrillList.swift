@@ -10,17 +10,16 @@ import SwiftUI
 import AVKit
 
 
-
-
+/*
+    DrillList is the opening scene for the app.  It is a List of all the video thumbnails.
+        When a row is selected, a segue is made into the DrillDetail view for a specific Drill data object.
+ */
 struct DrillListView: View {
     
         var body: some View {
-        
             VStack{
-        
                 Text("Golf AI")
                    .font(.system(size: 30, weight: .heavy, design: .default))
-        
                     NavigationView {
                         List(drillData) { drill in
                             NavigationLink(destination: DrillDetail(drill: drill)) {
@@ -29,7 +28,7 @@ struct DrillListView: View {
                         }
                         .navigationBarTitle(Text("Drills: "))
                     }
-            }.background(color.darkBlue)
+              }
         }
   }
 

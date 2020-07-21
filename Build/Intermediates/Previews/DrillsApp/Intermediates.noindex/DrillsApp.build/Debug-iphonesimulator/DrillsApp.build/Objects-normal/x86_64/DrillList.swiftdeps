@@ -24,7 +24,6 @@ depends-top-level:
 - !private "Text"
 - !private "VStack"
 - "View"
-- !private "color"
 - !private "drillData"
 depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "system"]
@@ -47,7 +46,6 @@ depends-member:
 - ["9DrillsApp13DrillListViewV", "_makeView"]
 - ["9DrillsApp13DrillListViewV", "_makeViewList"]
 - ["9DrillsApp13DrillListViewV", "body"]
-- !private ["9DrillsApp13DrillListViewV", "color"]
 - ["9DrillsApp13DrillListViewV", "deinit"]
 - !private ["9DrillsApp13DrillListViewV", "drillData"]
 - ["9DrillsApp13DrillListViewV", "init"]
@@ -90,7 +88,6 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "previews"]
 - !private ["7SwiftUI4TextV", "font"]
 - !private ["7SwiftUI4TextV", "init"]
-- !private ["7SwiftUI6VStackV", "background"]
 - !private ["7SwiftUI6VStackV", "init"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "DrillDetail"]
@@ -104,9 +101,7 @@ depends-member:
 - ["7SwiftUI4ViewP", "_Default_Body"]
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
-- !private ["7SwiftUI4ViewP", "background"]
 - ["7SwiftUI4ViewP", "body"]
-- !private ["7SwiftUI4ViewP", "color"]
 - !private ["7SwiftUI4ViewP", "drillData"]
 - !private ["7SwiftUI4ViewP", "font"]
 - !private ["7SwiftUI4ViewP", "init"]
@@ -123,7 +118,6 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "_previews"]
 - ["7SwiftUI16_PreviewProviderP", "platform"]
 - ["7SwiftUI16_PreviewProviderP", "previews"]
-- !private ["9DrillsApp5colorO", "darkBlue"]
 depends-nominal:
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
@@ -152,7 +146,6 @@ depends-nominal:
 - !private "7SwiftUI4FontV6WeightV"
 - !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
-- !private "9DrillsApp5colorO"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"

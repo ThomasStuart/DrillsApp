@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9621D7B824C6322A00B7D886 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9621D7B724C6322A00B7D886 /* VideoView.swift */; };
 		9621D7BA24C6326500B7D886 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9621D7B924C6326500B7D886 /* Utility.swift */; };
+		9621D7DC24C65E9400B7D886 /* BenefitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9621D7DB24C65E9400B7D886 /* BenefitView.swift */; };
 		96451AF624C2E82B006632C2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96451AF524C2E82B006632C2 /* Constants.swift */; };
 		96451AFC24C2E993006632C2 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96451AFB24C2E993006632C2 /* Color.swift */; };
 		9677D69F24C3937800954F82 /* DrillRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677D69E24C3937800954F82 /* DrillRow.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		9621D7B724C6322A00B7D886 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		9621D7B924C6326500B7D886 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		9621D7DB24C65E9400B7D886 /* BenefitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitView.swift; sourceTree = "<group>"; };
 		96451AF524C2E82B006632C2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		96451AFB24C2E993006632C2 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		9677D69E24C3937800954F82 /* DrillRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillRow.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			children = (
 				9677D69E24C3937800954F82 /* DrillRow.swift */,
 				9677D6A024C3A3E500954F82 /* StepView.swift */,
+				9621D7DB24C65E9400B7D886 /* BenefitView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				967B9B2424C3F1F400876A71 /* TitleOverlay.swift in Sources */,
 				96AA708E24C267FF00297869 /* AppDelegate.swift in Sources */,
 				96AA709024C267FF00297869 /* SceneDelegate.swift in Sources */,
+				9621D7DC24C65E9400B7D886 /* BenefitView.swift in Sources */,
 				967A75E924C59227000001D5 /* MergeImage.swift in Sources */,
 				96AA70AA24C2708B00297869 /* DrillList.swift in Sources */,
 				9677D69F24C3937800954F82 /* DrillRow.swift in Sources */,

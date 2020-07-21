@@ -12,12 +12,15 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "=="
 - !private "??"
+- !private "BenefitView"
 - !private "C"
+- !private "Divider"
 - "Drill"
 - "DrillDetail"
 - "DrillDetail_Previews"
 - !private "FloatLiteralType"
 - !private "ForEach"
+- !private "Group"
 - !private "Image"
 - !private "IntegerLiteralType"
 - !private "List"
@@ -40,6 +43,8 @@ depends-member:
 - !private ["7SwiftUI10AnimatableP", "init"]
 - !private ["7SwiftUI10AnimatableP", "stroke"]
 - !private ["Sa", "subscript"]
+- !private ["9DrillsApp11BenefitViewV", "deinit"]
+- !private ["9DrillsApp11BenefitViewV", "init"]
 - !private ["SK", "subscript"]
 - !private ["9DrillsApp1CV", "VID_HEIGHT"]
 - !private ["s7CVarArgP", "init"]
@@ -49,11 +54,9 @@ depends-member:
 - !private ["7SwiftUI5ColorV", "white"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "subheadline"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "title"]
 - !private ["s28CustomDebugStringConvertibleP", "white"]
-- !private ["s17CustomReflectableP", "subheadline"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "title"]
 - !private ["s17CustomReflectableP", "white"]
@@ -68,17 +71,19 @@ depends-member:
 - !private ["Se", "name"]
 - !private ["Se", "num"]
 - !private ["Se", "steps"]
-- !private ["Se", "subheadline"]
 - !private ["Se", "subscript"]
 - !private ["Se", "title"]
 - !private ["Se", "videoURL"]
 - !private ["Se", "white"]
+- !private ["7SwiftUI7DividerV", "init"]
 - !private ["9DrillsApp5DrillV", "benefits"]
 - !private ["9DrillsApp5DrillV", "steps"]
 - !private ["9DrillsApp5DrillV", "title"]
 - !private ["9DrillsApp5DrillV", "videoURL"]
+- !private ["9DrillsApp11DrillDetailV", "BenefitView"]
 - ["9DrillsApp11DrillDetailV", "Body"]
 - !private ["9DrillsApp11DrillDetailV", "C"]
+- !private ["9DrillsApp11DrillDetailV", "Divider"]
 - ["9DrillsApp11DrillDetailV", "Drill"]
 - !private ["9DrillsApp11DrillDetailV", "ForEach"]
 - !private ["9DrillsApp11DrillDetailV", "Image"]
@@ -102,6 +107,7 @@ depends-member:
 - ["9DrillsApp11DrillDetailV", "drill"]
 - ["9DrillsApp11DrillDetailV", "init"]
 - !private ["9DrillsApp20DrillDetail_PreviewsV", "DrillDetail"]
+- !private ["9DrillsApp20DrillDetail_PreviewsV", "Group"]
 - ["9DrillsApp20DrillDetail_PreviewsV", "Previews"]
 - ["9DrillsApp20DrillDetail_PreviewsV", "View"]
 - ["9DrillsApp20DrillDetail_PreviewsV", "_Default_Previews"]
@@ -114,7 +120,6 @@ depends-member:
 - ["9DrillsApp20DrillDetail_PreviewsV", "previews"]
 - !private ["7SwiftUI18DynamicViewContentP", "init"]
 - !private ["SE", "init"]
-- !private ["SE", "subheadline"]
 - !private ["SE", "subscript"]
 - !private ["SE", "title"]
 - !private ["SE", "white"]
@@ -122,28 +127,26 @@ depends-member:
 - !private ["SQ", "font"]
 - !private ["SQ", "foregroundColor"]
 - !private ["SQ", "init"]
+- !private ["SQ", "leading"]
 - !private ["SQ", "opacity"]
-- !private ["SQ", "subheadline"]
 - !private ["SQ", "subscript"]
 - !private ["SQ", "title"]
 - !private ["SQ", "white"]
 - !private ["s25ExpressibleByArrayLiteralP", "all"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
-- !private ["s23ExpressibleByNilLiteralP", "subheadline"]
 - !private ["s23ExpressibleByNilLiteralP", "title"]
 - !private ["s23ExpressibleByNilLiteralP", "white"]
-- !private ["7SwiftUI4FontV", "subheadline"]
 - !private ["7SwiftUI4FontV", "title"]
 - !private ["7SwiftUI7ForEachV", "init"]
-- !private ["7SwiftUI7GestureP", "subheadline"]
 - !private ["7SwiftUI7GestureP", "title"]
 - !private ["7SwiftUI7GestureP", "white"]
+- !private ["7SwiftUI5GroupV", "init"]
 - !private ["SH", "init"]
 - !private ["SH", "opacity"]
-- !private ["SH", "subheadline"]
 - !private ["SH", "subscript"]
 - !private ["SH", "title"]
 - !private ["SH", "white"]
+- !private ["7SwiftUI19HorizontalAlignmentV", "leading"]
 - !private ["s12IdentifiableP", "benefits"]
 - !private ["s12IdentifiableP", "steps"]
 - !private ["s12IdentifiableP", "title"]
@@ -152,6 +155,7 @@ depends-member:
 - !private ["7SwiftUI15InsettableShapeP", "fill"]
 - !private ["7SwiftUI15InsettableShapeP", "init"]
 - !private ["7SwiftUI15InsettableShapeP", "stroke"]
+- !private ["7SwiftUI4ListV", "background"]
 - !private ["7SwiftUI4ListV", "init"]
 - !private ["SM", "subscript"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
@@ -162,10 +166,10 @@ depends-member:
 - !private ["So8NSObjectP", "init"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["s9OptionSetP", "all"]
-- !private ["Sq", "subheadline"]
 - !private ["Sq", "title"]
 - !private ["Sq", "white"]
 - !private ["7SwiftUI15PreviewProviderP", "DrillDetail"]
+- !private ["7SwiftUI15PreviewProviderP", "Group"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
 - ["7SwiftUI15PreviewProviderP", ""]
 - ["7SwiftUI15PreviewProviderP", "_Default_Previews"]
@@ -206,8 +210,10 @@ depends-member:
 - !private ["7SwiftUI6VStackV", "overlay"]
 - !private ["9DrillsApp24VideoPlayerContainerViewV", "deinit"]
 - !private ["9DrillsApp24VideoPlayerContainerViewV", "init"]
+- !private ["7SwiftUI4ViewP", "BenefitView"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "C"]
+- !private ["7SwiftUI4ViewP", "Divider"]
 - !private ["7SwiftUI4ViewP", "ForEach"]
 - !private ["7SwiftUI4ViewP", "Image"]
 - !private ["7SwiftUI4ViewP", "List"]
@@ -238,7 +244,6 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "opacity"]
 - !private ["7SwiftUI4ViewP", "overlay"]
 - !private ["7SwiftUI4ViewP", "stroke"]
-- !private ["7SwiftUI4ViewP", "subheadline"]
 - !private ["7SwiftUI4ViewP", "title"]
 - !private ["7SwiftUI4ViewP", "white"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
@@ -253,11 +258,11 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s21_ObjectiveCBridgeableP", "subheadline"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "title"]
 - !private ["s21_ObjectiveCBridgeableP", "white"]
 - !private ["7SwiftUI16_PreviewProviderP", "DrillDetail"]
+- !private ["7SwiftUI16_PreviewProviderP", "Group"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
 - ["7SwiftUI16_PreviewProviderP", ""]
 - ["7SwiftUI16_PreviewProviderP", "_Default_Previews"]
@@ -269,13 +274,14 @@ depends-member:
 - !private ["9DrillsApp7benefitV", "id"]
 - !private ["9DrillsApp7benefitV", "name"]
 - !private ["9DrillsApp5colorO", "darkBlue"]
-- !private ["9DrillsApp5colorO", "darkGreen"]
+- !private ["9DrillsApp5colorO", "darkGray"]
 - !private ["9DrillsApp4stepV", "id"]
 - !private ["9DrillsApp4stepV", "name"]
 - !private ["9DrillsApp4stepV", "num"]
 depends-nominal:
 - !private "7SwiftUI10AnimatableP"
 - !private "Sa"
+- !private "9DrillsApp11BenefitViewV"
 - !private "SK"
 - !private "9DrillsApp1CV"
 - !private "s7CVarArgP"
@@ -287,6 +293,7 @@ depends-nominal:
 - !private "s23CustomStringConvertibleP"
 - !private "10Foundation12DataProtocolP"
 - !private "Se"
+- !private "7SwiftUI7DividerV"
 - !private "9DrillsApp5DrillV"
 - "9DrillsApp11DrillDetailV"
 - "9DrillsApp20DrillDetail_PreviewsV"
@@ -298,7 +305,9 @@ depends-nominal:
 - !private "7SwiftUI4FontV"
 - !private "7SwiftUI7ForEachV"
 - !private "7SwiftUI7GestureP"
+- !private "7SwiftUI5GroupV"
 - !private "SH"
+- !private "7SwiftUI19HorizontalAlignmentV"
 - !private "s12IdentifiableP"
 - !private "7SwiftUI5ImageV"
 - !private "7SwiftUI15InsettableShapeP"

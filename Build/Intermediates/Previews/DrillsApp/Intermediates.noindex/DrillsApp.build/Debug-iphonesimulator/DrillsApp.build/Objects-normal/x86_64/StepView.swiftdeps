@@ -204,7 +204,7 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "platform"]
 - ["7SwiftUI16_PreviewProviderP", "previews"]
 - !private ["7SwiftUI11_VectorMathP", "init"]
-- !private ["9DrillsApp5colorO", "darkGreen"]
+- !private ["9DrillsApp5colorO", "darkGray"]
 depends-nominal:
 - !private "7SwiftUI9AlignmentV"
 - !private "7SwiftUI10AnimatableP"

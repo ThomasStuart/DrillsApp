@@ -9,6 +9,13 @@
 import SwiftUI
 import AVKit
 
+
+/*   IMPORTANT NOTE:  The canvas times out because of this file. Not sure why at the moment.
+        A long term solution would be to store a thumbnail in the JSON file.
+ */
+
+
+//  Drill row is responsible for displaying a thumbnail for a given video with a play button overlay over the top.
 struct DrillRow: View {
     var drill: Drill
     
@@ -23,11 +30,9 @@ struct DrillRow: View {
 
 struct DrillRow_Previews: PreviewProvider {
     static var previews: some View {
-    
       Group {
         DrillRow(drill: drillData[2])
         DrillRow(drill: drillData[3])
       }
-       // .previewLayout(.fixed(width:300, height:400))
     }
 }

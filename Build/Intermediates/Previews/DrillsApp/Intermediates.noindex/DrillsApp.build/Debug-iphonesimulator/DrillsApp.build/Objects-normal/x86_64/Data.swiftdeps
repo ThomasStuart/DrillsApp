@@ -3,7 +3,7 @@ provides-top-level:
 - "tempData"
 - "drillData"
 - "load"
-- "reoloadWithStepCount"
+- "addStepCount"
 provides-nominal:
 provides-member:
 provides-dynamic-lookup:
@@ -19,10 +19,10 @@ depends-top-level:
 - !private "JSONDecoder"
 - "String"
 - "StringLiteralType"
+- "addStepCount"
 - "drillData"
 - !private "fatalError"
 - "load"
-- "reoloadWithStepCount"
 - "tempData"
 depends-member:
 - !private ["Sa", "indices"]
@@ -249,4 +249,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "9098fb1a301dee09679023640fddecb0"
+interface-hash: "4f8219e3d318b8e7e459393254284d4a"

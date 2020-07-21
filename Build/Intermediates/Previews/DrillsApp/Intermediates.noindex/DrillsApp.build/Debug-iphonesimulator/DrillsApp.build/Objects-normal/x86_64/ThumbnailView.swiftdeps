@@ -2,6 +2,7 @@
 provides-top-level:
 - "ThumbnailView"
 - "createThumbnailOfVideoFromRemoteUrl"
+- "verifyUrl"
 - "ThumbnailView_Previews"
 provides-nominal:
 - "9DrillsApp13ThumbnailViewV"
@@ -11,6 +12,7 @@ provides-member:
 - ["9DrillsApp22ThumbnailView_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!"
 - !private "-"
 - !private "=="
 - !private ">"
@@ -18,19 +20,24 @@ depends-top-level:
 - !private "AVAsset"
 - !private "AVAssetImageGenerator"
 - "AssignmentPrecedence"
+- "Bool"
 - !private "BooleanLiteralType"
 - !private "C"
 - !private "CGSize"
 - !private "CMTimeMakeWithSeconds"
+- "CastingPrecedence"
 - !private "FloatLiteralType"
+- !private "Group"
 - !private "Image"
 - !private "IntegerLiteralType"
+- !private "NSURL"
 - "PreviewProvider"
 - !private "ResizeImage"
 - "String"
 - !private "StringLiteralType"
 - "ThumbnailView"
 - "ThumbnailView_Previews"
+- !private "UIApplication"
 - "UIImage"
 - !private "UIScreen"
 - !private "URL"
@@ -38,6 +45,8 @@ depends-top-level:
 - "createThumbnailOfVideoFromRemoteUrl"
 - !private "mySampleMovieLinkData"
 - !private "print"
+- "verifyUrl"
+- !private "||"
 depends-member:
 - !private ["So7AVAssetC", "init"]
 - !private ["So21AVAssetImageGeneratorC", "appliesPreferredTrackTransform"]
@@ -58,23 +67,27 @@ depends-member:
 - !private ["So6CGSizeV", "init"]
 - !private ["s7CVarArgP", "appliesPreferredTrackTransform"]
 - !private ["s7CVarArgP", "bounds"]
+- !private ["s7CVarArgP", "canOpenURL"]
 - !private ["s7CVarArgP", "copyCGImage"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "main"]
 - !private ["s7CVarArgP", "maximumSize"]
 - !private ["s7CVarArgP", "mergeWith"]
+- !private ["s7CVarArgP", "shared"]
 - !private ["s7CVarArgP", "size"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["Sl", "subscript"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "appliesPreferredTrackTransform"]
 - !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- !private ["s28CustomDebugStringConvertibleP", "canOpenURL"]
 - !private ["s28CustomDebugStringConvertibleP", "copyCGImage"]
 - !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "maximumSize"]
 - !private ["s28CustomDebugStringConvertibleP", "mergeWith"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
 - !private ["s28CustomDebugStringConvertibleP", "size"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
@@ -84,11 +97,13 @@ depends-member:
 - !private ["s17CustomReflectableP", "width"]
 - !private ["s23CustomStringConvertibleP", "appliesPreferredTrackTransform"]
 - !private ["s23CustomStringConvertibleP", "bounds"]
+- !private ["s23CustomStringConvertibleP", "canOpenURL"]
 - !private ["s23CustomStringConvertibleP", "copyCGImage"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "main"]
 - !private ["s23CustomStringConvertibleP", "maximumSize"]
 - !private ["s23CustomStringConvertibleP", "mergeWith"]
+- !private ["s23CustomStringConvertibleP", "shared"]
 - !private ["s23CustomStringConvertibleP", "size"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
@@ -102,24 +117,29 @@ depends-member:
 - !private ["SE", "width"]
 - !private ["SQ", "appliesPreferredTrackTransform"]
 - !private ["SQ", "bounds"]
+- !private ["SQ", "canOpenURL"]
 - !private ["SQ", "copyCGImage"]
 - !private ["SQ", "height"]
 - !private ["SQ", "init"]
 - !private ["SQ", "main"]
 - !private ["SQ", "maximumSize"]
 - !private ["SQ", "mergeWith"]
+- !private ["SQ", "shared"]
 - !private ["SQ", "size"]
 - !private ["SQ", "subscript"]
 - !private ["SQ", "width"]
 - !private ["s5ErrorP", "localizedDescription"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["7SwiftUI5GroupV", "init"]
 - !private ["SH", "appliesPreferredTrackTransform"]
 - !private ["SH", "bounds"]
+- !private ["SH", "canOpenURL"]
 - !private ["SH", "copyCGImage"]
 - !private ["SH", "init"]
 - !private ["SH", "main"]
 - !private ["SH", "maximumSize"]
 - !private ["SH", "mergeWith"]
+- !private ["SH", "shared"]
 - !private ["SH", "size"]
 - !private ["SH", "subscript"]
 - !private ["7SwiftUI5ImageV", "init"]
@@ -137,23 +157,29 @@ depends-member:
 - !private ["So21NSItemProviderWritingP", "size"]
 - !private ["So8NSObjectC", "appliesPreferredTrackTransform"]
 - !private ["So8NSObjectC", "bounds"]
+- !private ["So8NSObjectC", "canOpenURL"]
 - !private ["So8NSObjectC", "copyCGImage"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "main"]
 - !private ["So8NSObjectC", "maximumSize"]
 - !private ["So8NSObjectC", "mergeWith"]
+- !private ["So8NSObjectC", "shared"]
 - !private ["So8NSObjectC", "size"]
 - !private ["So8NSObjectP", "appliesPreferredTrackTransform"]
 - !private ["So8NSObjectP", "bounds"]
+- !private ["So8NSObjectP", "canOpenURL"]
 - !private ["So8NSObjectP", "copyCGImage"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "main"]
 - !private ["So8NSObjectP", "maximumSize"]
 - !private ["So8NSObjectP", "mergeWith"]
+- !private ["So8NSObjectP", "shared"]
 - !private ["So8NSObjectP", "size"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "mergeWith"]
 - !private ["So14NSSecureCodingP", "size"]
+- !private ["So5NSURLC", "init"]
+- !private ["7SwiftUI15PreviewProviderP", "Group"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
 - !private ["7SwiftUI15PreviewProviderP", "ThumbnailView"]
 - ["7SwiftUI15PreviewProviderP", ""]
@@ -180,6 +206,7 @@ depends-member:
 - ["9DrillsApp13ThumbnailViewV", "deinit"]
 - ["9DrillsApp13ThumbnailViewV", "init"]
 - ["9DrillsApp13ThumbnailViewV", "url"]
+- !private ["9DrillsApp22ThumbnailView_PreviewsV", "Group"]
 - ["9DrillsApp22ThumbnailView_PreviewsV", "Previews"]
 - !private ["9DrillsApp22ThumbnailView_PreviewsV", "ThumbnailView"]
 - ["9DrillsApp22ThumbnailView_PreviewsV", "View"]
@@ -194,16 +221,26 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "mergeWith"]
 - !private ["So29UIAccessibilityIdentificationP", "size"]
+- !private ["So13UIApplicationC", "canOpenURL"]
+- !private ["So13UIApplicationC", "shared"]
 - !private ["So7UIImageC", "init"]
 - !private ["So7UIImageC", "mergeWith"]
 - !private ["So7UIImageC", "size"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "mergeWith"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "size"]
+- !private ["So30UIPasteConfigurationSupportingP", "canOpenURL"]
+- !private ["So30UIPasteConfigurationSupportingP", "shared"]
+- !private ["So11UIResponderC", "canOpenURL"]
+- !private ["So11UIResponderC", "shared"]
+- !private ["So30UIResponderStandardEditActionsP", "canOpenURL"]
+- !private ["So30UIResponderStandardEditActionsP", "shared"]
 - !private ["So8UIScreenC", "bounds"]
 - !private ["So8UIScreenC", "main"]
 - !private ["So18UITraitEnvironmentP", "bounds"]
 - !private ["So18UITraitEnvironmentP", "main"]
+- !private ["So23UIUserActivityRestoringP", "canOpenURL"]
+- !private ["So23UIUserActivityRestoringP", "shared"]
 - !private ["10Foundation3URLV", "init"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "Image"]
@@ -216,6 +253,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "createThumbnailOfVideoFromRemoteUrl"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "url"]
+- !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "height"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
@@ -226,27 +264,33 @@ depends-member:
 - !private ["s26_ExpressibleByImageLiteralP", "mergeWith"]
 - !private ["s26_ExpressibleByImageLiteralP", "size"]
 - !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "appliesPreferredTrackTransform"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "canOpenURL"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "copyCGImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "maximumSize"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "mergeWith"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "size"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "appliesPreferredTrackTransform"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "bounds"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "canOpenURL"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "copyCGImage"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "maximumSize"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "mergeWith"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shared"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "size"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
+- !private ["7SwiftUI16_PreviewProviderP", "Group"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
 - !private ["7SwiftUI16_PreviewProviderP", "ThumbnailView"]
 - ["7SwiftUI16_PreviewProviderP", ""]
@@ -278,6 +322,7 @@ depends-nominal:
 - !private "SQ"
 - !private "s5ErrorP"
 - !private "s25ExpressibleByArrayLiteralP"
+- !private "7SwiftUI5GroupV"
 - !private "SH"
 - !private "7SwiftUI5ImageV"
 - !private "SM"
@@ -289,6 +334,7 @@ depends-nominal:
 - !private "So8NSObjectC"
 - !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
+- !private "So5NSURLC"
 - "7SwiftUI15PreviewProviderP"
 - !private "Sk"
 - !private "Sm"
@@ -297,12 +343,18 @@ depends-nominal:
 - "9DrillsApp13ThumbnailViewV"
 - "9DrillsApp22ThumbnailView_PreviewsV"
 - !private "So29UIAccessibilityIdentificationP"
+- !private "So13UIApplicationC"
 - !private "So7UIImageC"
 - !private "So39UIItemProviderPresentationSizeProvidingP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
 - !private "So8UIScreenC"
 - !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
 - !private "10Foundation3URLV"
 - "7SwiftUI4ViewP"
+- !private "7SwiftUI11ViewBuilderV"
 - !private "s14_ArrayProtocolP"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
@@ -358,4 +410,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "df056cd2f6edd1479b08b41cef149feb"
+interface-hash: "cc0b96191ed5cad3f0f95253810a9232"

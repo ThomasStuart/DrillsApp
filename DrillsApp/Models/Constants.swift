@@ -13,7 +13,7 @@ import SwiftUI
 enum color{
     static let lightGreen =  Color(hex:"16a085")
     static let darkBlue   =  Color(hex:"4F7C82")
-    static let darkGreen  =  Color(hex:"434B48")
+    static let darkGray   =  Color(hex:"434B48")
     static let darkYellow =  Color(hex:"D7BF68")
     static let darkRed    =  Color(hex:"C52E26")
     static let lightBlue  =  Color(hex:"799992")

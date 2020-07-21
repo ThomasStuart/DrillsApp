@@ -8,7 +8,11 @@
 
 import SwiftUI
 
-
+/*
+   Drill is an data object that will hold data in the JSON file.
+        Each element in the JSON file is a Drill object.
+ 
+ */
 struct Drill: Decodable, Identifiable {
     var id: Int
     var title: String

@@ -8,6 +8,11 @@
 
 import SwiftUI
 
+/*
+ This file just contains some sample links for the AVPlayer.
+    It was used before i was able to access the golf videos
+ */
+
 let mySampleMovieLinkData = [
     "https://thomasmedia.s3.us-east-2.amazonaws.com/planet.mov",
     "https://thomasmedia.s3.us-east-2.amazonaws.com/BigBuckBunny.mp4",

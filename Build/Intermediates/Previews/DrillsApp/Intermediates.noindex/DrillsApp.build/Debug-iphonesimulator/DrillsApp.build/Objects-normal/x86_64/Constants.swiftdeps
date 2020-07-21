@@ -72,7 +72,7 @@ depends-member:
 - ["s21_ObjectiveCBridgeableP", "width"]
 - ["9DrillsApp5colorO", "Color"]
 - ["9DrillsApp5colorO", "darkBlue"]
-- ["9DrillsApp5colorO", "darkGreen"]
+- ["9DrillsApp5colorO", "darkGray"]
 - ["9DrillsApp5colorO", "darkRed"]
 - ["9DrillsApp5colorO", "darkYellow"]
 - ["9DrillsApp5colorO", "lightBlue"]
@@ -145,4 +145,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e2814e419029225267b3c26c6a1e037e"
+interface-hash: "f14705660a1b4d45ea2cfeb37a3e030d"

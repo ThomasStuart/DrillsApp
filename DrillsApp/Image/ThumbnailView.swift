@@ -20,9 +20,9 @@ struct ThumbnailView: View {
 
 
 func createThumbnailOfVideoFromRemoteUrl(url: String) -> UIImage? {
- 
+    
     // Case where there is no video for the Drill
-    if url == C.NO_VID_VAL{
+    if url == C.NO_VID_VAL  ||  !verifyUrl(urlString: url) {
         // return a thumbnail with no video png
         return UIImage(imageLiteralResourceName: "noVideo")
     }
@@ -45,7 +45,7 @@ func createThumbnailOfVideoFromRemoteUrl(url: String) -> UIImage? {
         
         if thumbnail.size.height > 205{
             let bottomImage = UIImage(imageLiteralResourceName: "backgroundImage")
-            let ri =  ResizeImage(img: thumbnail)
+            let ri =  ResizeImage(img: thumbnail, tw:364, th:204)
             return bottomImage.mergeWith(topImage: ri)
         }
 
@@ -56,8 +56,27 @@ func createThumbnailOfVideoFromRemoteUrl(url: String) -> UIImage? {
     }
 }
 
+
+func verifyUrl (urlString: String?) -> Bool {
+    if let urlString = urlString {
+        if let url = NSURL(string: urlString) {
+            return UIApplication.shared.canOpenURL(url as URL)
+        }
+    }
+    return false
+}
+
 struct ThumbnailView_Previews: PreviewProvider {
     static var previews: some View {
-        ThumbnailView(url: mySampleMovieLinkData[3])
+        Group{
+             ThumbnailView(url: mySampleMovieLinkData[0])
+             ThumbnailView(url: mySampleMovieLinkData[3])
+             //ThumbnailView(url: "https://swing-videos.s3.us-east-2.amazonaws.com/Drill+Videos/tiptoeDrillFull.mp4")
+             //ThumbnailView(url: "https://swing-videos.s3.us-east-2.amazonaws.com/Drill+Videos/barrelFull.mp4") // THIS LINK crashes canvas because it takes too long to load
+            //ThumbnailView(url: "https://swing-videos.s3.us-east-2.amazonaws.com/Drill+Videos/stickFinishFull.mp4")
+             ThumbnailView(url: "bad link")
+             ThumbnailView(url: "")
+             ThumbnailView(url: "another bad link")
+        }
     }
 }
