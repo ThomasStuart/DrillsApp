@@ -8,10 +8,13 @@
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
+<img src='https://recordit.co/DhnxlCZtFg' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+old video linkd link to gif: http://g.recordit.co/btiypmLM2P.gif
 
-<img src='http://g.recordit.co/btiypmLM2P.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-direct link to gif: http://g.recordit.co/btiypmLM2P.gif
+OLD VIDEO
+<img src='http://g.recordit.co/btiypmLM2P.gif' title='OLD Video Walkthrough' width='' alt='Video Walkthrough' />
+old video linkd link to gif: http://g.recordit.co/btiypmLM2P.gif
 
 ## NOTE:
 File not included in Repo: "Drills.json"  (will need to add file in order to compile)
