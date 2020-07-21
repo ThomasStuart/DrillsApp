@@ -7,9 +7,9 @@
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
-<img src='https://recordit.co/DhnxlCZtFg' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-old video linkd link to gif: http://g.recordit.co/btiypmLM2P.gif
+Here's a walkthrough of implemented user stories: <br>
+<img src='http://g.recordit.co/DhnxlCZtFg.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+direct link to gif: http://g.recordit.co/DhnxlCZtFg.gif <br>
 
 
 OLD VIDEO
